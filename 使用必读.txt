@@ -16,6 +16,3 @@ SDKÆô¶¯ÎÄ¼ş´æ·ÅÔÚTAE_SDK/binÄ¿Â¼ÏÂ£¬WindowsÓÃ»§Ë«»÷¡°StartServer.bat¡±¡£MacÓÃ»§Æ
 
 5. ÈçºÎ·´À¡Éè¼ÆÊ¦ĞèÇó¡¢SDKµÄBugºÍ¹¦ÄÜ¸Ä½ø£¿
 Çë½«Äú·¢ÏÖµÄÎÊÌâ·´À¡¼¯ÖĞµ½ÎÒÃÇµÄÂÛÌ³£¬µØÖ·Îª£ºhttp://bbs.zx.taobao.com/thread.php?fid=42
-
-
-
