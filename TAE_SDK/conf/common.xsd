@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="GBK"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xs:element name="id" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				ID，用于唯一标示
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="name" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				名称，用作显示信息，帮助使用者识别
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="thumbnail" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				缩略图
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="description" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				描述
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="css" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				CSS文件的相对路径
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="version" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				版本，标识某一阶段的作品。在进行系统升级时需要进行调整，版本的通常写法为1.2.3形式。
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="file" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				页面的文件名称
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="themes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="theme" minOccurs="1" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>
+							主题元素，参考 theme
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="default" type="xs:string" default="default">
+				<xs:annotation>
+					<xs:documentation>
+						默认的主题风格名称，默认值"default"
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="theme">
+		<xs:annotation>
+			<xs:documentation>
+				主题元素，有两个子元素：css、和thumbnail
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="css" />
+				<xs:element ref="thumbnail" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						主题名称，用于标识主题
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="formType">
+		<xs:annotation>
+			<xs:documentation>
+				表单的类型
+				特别提醒：SDK2开始，采用严格的schema的验证，因此formType类型的值应该严格参考当前schema
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="text">
+				<xs:annotation>
+					<xs:documentation>
+						表单类型：text输入框
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="textarea">
+				<xs:annotation>
+					<xs:documentation>
+						表单类型：textarea输入框
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="select">
+				<xs:annotation>
+					<xs:documentation>
+						表单类型：select输入框
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="range">
+				<xs:annotation>
+					<xs:documentation>
+						表单类型：radio输入框
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="checkbox">
+				<xs:annotation>
+					<xs:documentation>
+						表单类型：checkbox输入框
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="categoryForm">
+				<xs:annotation>
+					<xs:documentation>
+						表单类型：类目选择器
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="itemForm">
+				<xs:annotation>
+					<xs:documentation>
+						表单类型：宝贝选择器
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="parameterType">
+		<xs:annotation>
+			<xs:documentation>
+				参数类型
+				特别提醒：SDK2开始，采用严格的schema的验证，因此parameterType类型的值应该严格参考当前schema
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="text">
+				<xs:annotation>
+					<xs:documentation>
+						text数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="textarea">
+				<xs:annotation>
+					<xs:documentation>
+						textarea数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="htmlarea">
+				<xs:annotation>
+					<xs:documentation>
+						HTML数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="url">
+				<xs:annotation>
+					<xs:documentation>
+						URL数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="date">
+				<xs:annotation>
+					<xs:documentation>
+						日期数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="email">
+				<xs:annotation>
+					<xs:documentation>
+						电子邮件数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="number">
+				<xs:annotation>
+					<xs:documentation>
+						数字数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="category">
+				<xs:annotation>
+					<xs:documentation>
+						类目数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="item">
+				<xs:annotation>
+					<xs:documentation>
+						宝贝数据类型
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="pageType">
+		<xs:annotation>
+			<xs:documentation>
+				页面的类型
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="index">
+				<xs:annotation>
+					<xs:documentation>首页类型</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="detail">
+				<xs:annotation>
+					<xs:documentation>宝贝详情页类型 </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="list">
+				<xs:annotation>
+					<xs:documentation>列表页类型 </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="other">
+				<xs:annotation>
+					<xs:documentation>其他类型</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="parameters">
+		<xs:complexType>
+			<xs:choice>
+				<xs:annotation>
+					<xs:documentation>
+						特别提醒：SDK 2 开始支持group元素，与param元素是平级的，
+						并且param与group不能同时出现，也就是说两者取其一。
+						param与group都是可选的。				
+					</xs:documentation>
+				</xs:annotation>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="param" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="group" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="group">
+		<xs:complexType>
+			<xs:annotation>
+				<xs:documentation>
+					SDK2开始，提供分组元素，将参数根据不同的功能，分为不同的逻辑组。便于设计师维护和用户理解和使用。
+				</xs:documentation>
+			</xs:annotation>
+			<xs:sequence>
+				<xs:annotation>
+					<xs:documentation>
+						一个组中，至少包含一个section(部分)
+					</xs:documentation>
+				</xs:annotation>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="section" />
+			</xs:sequence>
+			<xs:attribute name="title" use="required" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						用于组的显示标题，必填
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="description" use="optional" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						用于组的描述，可选，用于说明组功能
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="section">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:annotation>
+					<xs:documentation>
+						部分元素，用于区分同组中的子功能。
+						一个Section部分，可以存在零个以上的param子元素
+					</xs:documentation>
+				</xs:annotation>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="param" />
+			</xs:sequence>
+			<xs:attribute name="title" use="optional" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						用于部分的显示标题，必填
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="folded" use="optional" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>
+						标记是否折叠部分元素，默认值为"true"。如果为true时，在模块编辑表单中，部分将会被折叠。因此，设计师可以自主控制。
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="description" use="optional" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						用于部分的描述，可选，用于说明组功能
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="param">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="option" />
+			</xs:sequence>
+
+			<xs:attribute name="description" use="required" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						模块参数描述信息，用于模块参数表单中，帮助用户使用参数。 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+			<xs:attribute name="formType" use="required" type="formType">
+				<xs:annotation>
+					<xs:documentation>
+						模块参数表单类型，控制模块参数表单中的控件显示。具体请参考 formType
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+			<xs:attribute name="label" use="required" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						模块参数字段标签信息，用于模块参数表单中 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+			<xs:attribute name="name" use="required" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						模块参数名称，模块参数表单中的提交参数。
+						特别提醒：并不是所有参数名都会被提交，只有readonly="false"并且disabled="false"的参数才会被提交。
+						请参考下面的readonly和disabled属性。
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+			<xs:attribute name="ptype" use="required" type="parameterType">
+				<xs:annotation>
+					<xs:documentation>
+						模块参数类型，用于指定参数特定的格式。 具体请参考 parameterType
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+			<xs:attribute name="readonly" use="optional" type="xs:boolean" default="false">
+				<xs:annotation>
+					<xs:documentation>
+						模块参数是否为自读，如果readonly="true"的话，表示参数不需要修改。
+						因此，readonly="true"的参数不会出现在模块参数编辑表单中，认为这个参数为设计师自用。
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+			<xs:attribute name="disabled" use="optional" type="xs:boolean" default="false">
+				<xs:annotation>
+					<xs:documentation>
+						模块参数是否失效，如果disabled="true"的话，表示参数失效。当模板升级时，设计师不再使用当前参数，而是使用新增的参数，但是又希望
+						当前失效参数不出现在模块参数编辑表单中。请注意，当参数失效时，设计师不应该再去读取该参数，否则可能会读取意想不到的结果。
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+			<xs:attribute name="localImage" use="optional" type="xs:boolean" default="false">
+				<xs:annotation>
+					<xs:documentation>
+						特殊属性，只有formType为"text"或"textarea"时才起作用。
+						用于帮助装修市场应用分析模块参数中初始化值或参数表单中的输入框中的值。
+						当参数的属性localImage="true"的话，表示为图片地址.
+						如果有多个值，配合localImageSplit属性一起使用，localImageSplit属性值为图片地址分割符号，
+						程序将会利用localImageSplit属性，分割参数值成多个图片地址，保存到数据库。
+						特别提醒：当前属性不是用于PHP页面渲染，而是帮助应用分析模块参数值。
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="localImageSplit" use="optional" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						特殊属性，只有formType为"text"或"textarea"时才起作用。
+						用于帮助装修市场应用分析模块参数中初始化值或参数表单中的输入框中的值。
+						当参数的属性localImage="true"的话，表示为图片地址.
+						如果有多个值，配合localImageSplit属性一起使用，localImageSplit属性值为图片地址分割符号，
+						程序将会利用localImageSplit属性，分割参数值成多个图片地址，保存到数据库。
+						特别提醒：当前属性不是用于PHP页面渲染，而是帮助应用分析模块参数值。
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+
+
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="option">
+		<xs:complexType mixed="true">
+			<xs:attribute name="value" use="required" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						参数选项值，必填
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="selected" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="selected">
+							<xs:annotation>
+								<xs:documentation>
+									用于标记select、range或者checkbox中的选项值是否被选上。
+								</xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

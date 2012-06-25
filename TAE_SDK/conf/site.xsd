@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="GBK"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<xs:include schemaLocation="./common.xsd" />
+
+	<xs:element name="site">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="id" />
+				<xs:element ref="name" />
+				<xs:element ref="author" />
+				<xs:element ref="thumbnail" />
+				<xs:element ref="language" />
+				<xs:element ref="version" />
+				<xs:element ref="apply-sites" />
+				<xs:element ref="change-notes" />
+				<xs:element ref="description" />
+				<xs:element ref="global" />
+				<xs:element ref="themes" />
+				<xs:element ref="pages" minOccurs="0" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="author">
+		<xs:annotation>
+			<xs:documentation>
+				模板的作者信息，主要包括旺旺服务支持站点
+            </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" use="optional" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>
+								模板作者的姓名
+							</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="url" use="required" type="xs:anyURI">
+						<xs:annotation>
+							<xs:documentation>
+								服务支持站点
+			                </xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="wangwang" use="required" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>
+								阿里旺旺的NickName
+			                </xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="language" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				模板语言，SDK目前只支持php语言
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="apply-sites" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				模板适用的站点，站点都是数字，多个站点采用逗号分隔
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="change-notes" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+				升级记录，主要记录该版本所作的修改。
+            </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="global">
+		<xs:annotation>
+			<xs:documentation>
+				模板的全局设置项
+            </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>
+							模板的header.json文件，会用于该模板的所有页面，值为文件名称
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="footer" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>
+							模板的footer.json文件，会用于该模板的所有页面，值为文件名称
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="pages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="page" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="page">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="name" />
+				<xs:element ref="file" />
+				<xs:element ref="thumbnail" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="description" minOccurs="0" maxOccurs="1" />
+			</xs:all>
+			<xs:attribute name="type" use="required" type="pageType">
+				<xs:annotation>
+					<xs:documentation>
+						页面的类型，主要包括首页，详情页，搜索页，文章页和其他类型页面
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

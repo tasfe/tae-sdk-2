@@ -1,0 +1,381 @@
+2012-06-25 18:12:42 Slf4jLog#info [INFO]: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-06-25 18:12:42 Slf4jLog#info [INFO]: jetty-6.1.26
+2012-06-25 18:12:43 Slf4jLog#info [INFO]: Deploy D:\TAE_SDK\trunk\TAE_SDK\conf\sdk-web.xml -> org.mortbay.jetty.webapp.WebAppContext@27982{/,D:\TAE_SDK\trunk\TAE_SDK/conf/sdk-web.war}
+2012-06-25 18:12:43 Slf4jLog#info [INFO]: Extract D:\TAE_SDK\trunk\TAE_SDK/conf/sdk-web.war to D:\TAE_SDK\trunk\TAE_SDK\temp\Jetty_0_0_0_0_8080_sdk.web.war____.34j6wa\webapp
+2012-06-25 18:12:44 Slf4jLog#info [INFO]: No Transaction manager found - if your webapp requires one, please configure one.
+2012-06-25 18:12:44 Slf4jLog#info [INFO]: Initializing Spring root WebApplicationContext
+2012-06-25 18:12:44 ContextLoader#initWebApplicationContext [INFO]: Root WebApplicationContext: initialization started
+2012-06-25 18:12:44 AbstractApplicationContext#prepareRefresh [INFO]: Refreshing Root WebApplicationContext: startup date [Mon Jun 25 18:12:44 CST 2012]; root of context hierarchy
+2012-06-25 18:12:44 XmlBeanDefinitionReader#loadBeanDefinitions [INFO]: Loading XML bean definitions from class path resource [META-INF/config/spring/spring-sdk-db.xml]
+2012-06-25 18:12:45 XmlBeanDefinitionReader#loadBeanDefinitions [INFO]: Loading XML bean definitions from class path resource [META-INF/config/spring/spring-sdk-service.xml]
+2012-06-25 18:12:45 XmlBeanDefinitionReader#loadBeanDefinitions [INFO]: Loading XML bean definitions from ServletContext resource [/META-INF/config/spring/spring-sdk-webconsole.xml]
+2012-06-25 18:12:45 DefaultListableBeanFactory#preInstantiateSingletons [INFO]: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@bf1f20: defining beans [propertyConfigurer,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,friendLinkDAO,itemDAO,shopCategoryDAO,shopDAO,siteTemplateShopDAO,systemModuleDAO,systemPropertyDAO,userDAO,layoutColumnDAO,layoutDAO,moduleDAO,moduleParameterDAO,oduleParameterOptionDAO,org.springframework.aop.config.internalAutoProxyCreator,jndiTemplate,dataSource,jdbcTemplate,sessionFactory,accountManager,categoryManager,moduleManager,templateManager,friendLinkManager,itemComponentManager,itemManager,shopCategoryManager,siteTemplateShopManager,systemModuleDOManager,systemPropertyManager,uriManager,userManager,webConsoleFacade,layoutManager,moduleParameterManager,moduleRenderManager,pageManager,themeManager,moduleRenderContextBuilder,pageRender,localModuleRender,systemModuleRender,openServiceSpringBeanContainer,renderEngineFactory,phpRenderEngine,openServiceAnnotatedClassScanner,quercus,validator,cssBackgroundRepeatMap,cssBackgroundPositionMap,cssFontFamiliesMap,cssBorderRadiusMap,cssFontSizesList,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2012-06-25 18:12:45 Version#<clinit> [INFO]: Hibernate Annotations 3.4.0.GA
+2012-06-25 18:12:45 Environment#<clinit> [INFO]: Hibernate 3.3.1.GA
+2012-06-25 18:12:45 Environment#<clinit> [INFO]: hibernate.properties not found
+2012-06-25 18:12:45 Environment#buildBytecodeProvider [INFO]: Bytecode provider name : javassist
+2012-06-25 18:12:45 Environment#<clinit> [INFO]: using JDK 1.4 java.sql.Timestamp handling
+2012-06-25 18:12:46 Configuration#configure [INFO]: configuring from url: jar:file:/D:/TAE_SDK/trunk/TAE_SDK/temp/Jetty_0_0_0_0_8080_sdk.web.war____.34j6wa/webapp/WEB-INF/lib/sdk-model-2.0.0-SNAPSHOT.jar!/META-INF/config/hibernate-3.0/hibernate.cfg.xml
+2012-06-25 18:12:46 Configuration#addResource [INFO]: Reading mappings from resource : META-INF/config/hibernate-3.0/FriendLinkDO.hbm.xml
+2012-06-25 18:12:46 Configuration#addResource [INFO]: Reading mappings from resource : META-INF/config/hibernate-3.0/UserDO.hbm.xml
+2012-06-25 18:12:46 Configuration#addResource [INFO]: Reading mappings from resource : META-INF/config/hibernate-3.0/ShopCategoryDO.hbm.xml
+2012-06-25 18:12:46 Configuration#addResource [INFO]: Reading mappings from resource : META-INF/config/hibernate-3.0/ShopDO.hbm.xml
+2012-06-25 18:12:46 Configuration#addResource [INFO]: Reading mappings from resource : META-INF/config/hibernate-3.0/ItemDO.hbm.xml
+2012-06-25 18:12:46 Configuration#doConfigure [INFO]: Configured SessionFactory: null
+2012-06-25 18:12:46 HbmBinder#bindRootPersistentClassCommonValues [INFO]: Mapping class: com.taobao.tae.openservice.domain.OpenFriendLinkDO -> SDK_FRIEND_LINKS
+2012-06-25 18:12:46 HbmBinder#bindRootPersistentClassCommonValues [INFO]: Mapping class: com.taobao.tae.openservice.domain.OpenUserDO -> SDK_USERS
+2012-06-25 18:12:46 HbmBinder#bindRootPersistentClassCommonValues [INFO]: Mapping class: com.taobao.tae.openservice.domain.OpenShopCategoryDO -> sdk_shop_categories
+2012-06-25 18:12:46 HbmBinder#bindRootPersistentClassCommonValues [INFO]: Mapping class: com.taobao.tae.openservice.domain.OpenShopDO -> SDK_SHOPS
+2012-06-25 18:12:46 HbmBinder#bindRootPersistentClassCommonValues [INFO]: Mapping class: com.taobao.tae.openservice.domain.OpenItemDO -> SDK_ITEMS
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.SiteTemplateShopDO
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.SiteTemplateShopDO on table SDK_SITETEMPLATE_SHOP
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.SystemModuleDO
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.SystemModuleDO on table SDK_DC_MODULES
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.SystemPropertyDO
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.SystemPropertyDO on table SDK_SYSTEM_PROPERTIES
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.Layout
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.Layout on table SDK_LAYOUTS
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.LayoutColumn
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.LayoutColumn on table SDK_LAYOUT_COLUMNS
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.Module
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.Module on table SDK_MODULES
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.ModuleParameter
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.ModuleParameter on table SDK_MODULE_PARAMETERS
+2012-06-25 18:12:46 AnnotationBinder#bindClass [INFO]: Binding entity from annotated class: com.taobao.tae.sdk.model.ModuleParameterOption
+2012-06-25 18:12:46 EntityBinder#bindTable [INFO]: Bind entity com.taobao.tae.sdk.model.ModuleParameterOption on table SDK_MODULE_PARAMETER_OPTIONS
+2012-06-25 18:12:46 AnnotationConfiguration#secondPassCompile [INFO]: Hibernate Validator not found: ignoring
+2012-06-25 18:12:46 LocalSessionFactoryBean#buildSessionFactory [INFO]: Building new Hibernate SessionFactory
+2012-06-25 18:12:46 HibernateSearchEventListenerRegister#enableHibernateSearch [INFO]: Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2012-06-25 18:12:46 ConnectionProviderFactory#newConnectionProvider [INFO]: Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2012-06-25 18:12:52 SettingsFactory#buildSettings [INFO]: RDBMS: Apache Derby, version: 10.8.2.2 - (1181258)
+2012-06-25 18:12:52 SettingsFactory#buildSettings [INFO]: JDBC driver: Apache Derby Embedded JDBC Driver, version: 10.8.2.2 - (1181258)
+2012-06-25 18:12:52 Dialect#<init> [INFO]: Using dialect: org.hibernate.dialect.DerbyDialect
+2012-06-25 18:12:52 TransactionFactoryFactory#buildTransactionFactory [INFO]: Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2012-06-25 18:12:52 TransactionManagerLookupFactory#getTransactionManagerLookup [INFO]: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-06-25 18:12:52 SettingsFactory#buildSettings [INFO]: Automatic flush during beforeCompletion(): disabled
+2012-06-25 18:12:52 SettingsFactory#buildSettings [INFO]: Automatic session close at end of transaction: disabled
+2012-06-25 18:12:52 SettingsFactory#buildSettings [INFO]: Scrollable result sets: enabled
+2012-06-25 18:12:52 SettingsFactory#buildSettings [INFO]: JDBC3 getGeneratedKeys(): disabled
+2012-06-25 18:12:52 SettingsFactory#buildSettings [INFO]: Connection release mode: auto
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Default batch fetch size: 1
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Generate SQL with comments: disabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Order SQL updates by primary key: disabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Order SQL inserts for batching: disabled
+2012-06-25 18:12:53 SettingsFactory#createQueryTranslatorFactory [INFO]: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-06-25 18:12:53 ASTQueryTranslatorFactory#<init> [INFO]: Using ASTQueryTranslatorFactory
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Query language substitutions: {}
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: JPA-QL strict compliance: disabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Second-level cache: enabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Query cache: disabled
+2012-06-25 18:12:53 SettingsFactory#createRegionFactory [INFO]: Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Optimize cache for minimal puts: disabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Structured second-level cache entries: disabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Statistics: disabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Deleted entity synthetic identifier rollback: disabled
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Default entity-mode: pojo
+2012-06-25 18:12:53 SettingsFactory#buildSettings [INFO]: Named query checking : enabled
+2012-06-25 18:12:53 SessionFactoryImpl#<init> [INFO]: building session factory
+2012-06-25 18:12:53 SessionFactoryObjectFactory#addInstance [INFO]: Not binding factory to JNDI, no JNDI name configured
+2012-06-25 18:12:53 SchemaUpdate#execute [INFO]: Running hbm2ddl schema update
+2012-06-25 18:12:53 SchemaUpdate#execute [INFO]: fetching database metadata
+2012-06-25 18:12:53 SchemaUpdate#execute [INFO]: updating schema
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_DC_MODULES
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, template_content, thumbnail_url, name, script_url, site_id, css_url, css_selector, template_type, short_name, version]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110731920]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_FRIEND_LINKS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, title, user_id, url]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110730970]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_ITEMS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, collected_count, title, itemcategoryid, commentcount, price, owner_id, sold_count, shopcategoryid, pic_url]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110731090]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_LAYOUTS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, template_dir_name, layout_order, page_file_name, name, prototype_id]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110732800]
+2012-06-25 18:12:54 DatabaseMetadata#getTableMetadata [INFO]: table not found: SDK_LAYOUT_COLUMNS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_MODULES
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, module_id, layout_column_id, module_name, prototype_id]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110733140]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_MODULE_PARAMETERS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [read_only, module_dom_id, template_id, page_file, label, id, module_instance_id, form_type, module_id, description, name, value, p_type]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110732430]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_MODULE_PARAMETER_OPTIONS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, attr_selected, value, module_param_id, attr_value]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110732590]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_SHOPS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [main_business, id, title, started_at, domain_name, user_id, shop_logo, user_nick, item_count, bulettin, introduction, logo_url]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110731420]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_SITETEMPLATE_SHOP
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, shop_id, sitetemplate_id]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110731550]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_SYSTEM_PROPERTIES
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, sys_key, sys_value]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110732290]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_USERS
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, nick, goodrate, registration_date, province, credit, city, country]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110731670]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: table found: .APP.SDK_SHOP_CATEGORIES
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: columns: [id, shop_id, name, icon_url, parent_id]
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: foreign keys: []
+2012-06-25 18:12:54 TableMetadata#<init> [INFO]: indexes: [sql120625110731270]
+2012-06-25 18:12:54 DatabaseMetadata#getTableMetadata [INFO]: table not found: SDK_LAYOUT_COLUMNS
+2012-06-25 18:12:54 SchemaUpdate#execute [INFO]: schema update complete
+2012-06-25 18:12:57 Version#<clinit> [INFO]: Hibernate Validator 4.0.2.GA
+2012-06-25 18:12:57 ContextLoader#initWebApplicationContext [INFO]: Root WebApplicationContext: initialization completed in 13548 ms
+2012-06-25 18:12:58 Slf4jLog#info [INFO]: Initializing Spring FrameworkServlet 'springMVC'
+2012-06-25 18:12:58 FrameworkServlet#initServletBean [INFO]: FrameworkServlet 'springMVC': initialization started
+2012-06-25 18:12:58 AbstractApplicationContext#prepareRefresh [INFO]: Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Jun 25 18:12:58 CST 2012]; parent: Root WebApplicationContext
+2012-06-25 18:12:58 XmlBeanDefinitionReader#loadBeanDefinitions [INFO]: Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2012-06-25 18:12:58 DefaultListableBeanFactory#preInstantiateSingletons [INFO]: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18a0a8: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,multipartResolver,baseController,designController,indexController,moduleManagerController,pageManagerController,systemManagerController,templateManagerController,themeManagerController,baseRenderController,moduleRenderController,pageRenderController,resourceController,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@bf1f20
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/remove],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taobao.tae.sdk.web.model.DesignMessage com.taobao.tae.sdk.web.controller.design.DesignController.removeItem(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/{templateDirectoryName}/{pageFileName}/module/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.design.DesignController.addModule(java.lang.String,java.lang.String,java.lang.Integer,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/module/params/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.design.DesignController.saveModuleParameters(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/category/chooser/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taobao.tae.sdk.web.model.DesignMessage com.taobao.tae.sdk.web.controller.design.DesignController.saveCategory(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taobao.tae.sdk.web.model.DesignMessage com.taobao.tae.sdk.web.controller.design.DesignController.saveItem(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/item/chooser/query],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taobao.tae.sdk.web.model.DesignMessage com.taobao.tae.sdk.web.controller.design.DesignController.queryItemData(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/{templateDirectoryName}/{pageFileName}/module/operation],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taobao.tae.sdk.web.model.DesignMessage com.taobao.tae.sdk.web.controller.design.DesignController.operateModule(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/save/page/layout/{templateDirectoryName}/{pageFileName}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.taobao.tae.sdk.web.model.DesignMessage com.taobao.tae.sdk.web.controller.design.DesignController.savePageLayout(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/page/debug/{templateDirectoryName}/{pageFileName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.design.DesignController.getPageDebugUI(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/page/debug/{templateDirectoryName}/{pageFileName}/{themeName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.design.DesignController.getPageDebugUI(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/{templateDirectoryName}/{pageFileName}/module/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.design.DesignController.getModulesListPageUI(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/design/page/layout/{templateDirectoryName}/{pageFileName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.design.DesignController.getPageLayoutUI(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/ || //index || /man// || /man//index || /_ah/ || /_ah/index || /_ah// || /_ah//index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.IndexController.indexUI(org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/module//delete/{templateDirectoryName}/{moduleDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ModuleManagerController.deleteModule(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/module//form/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ModuleManagerController.getCreateModuleFormUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/module//submit/{templateDirectoryName}/{editMode}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ModuleManagerController.submitModuleForm(java.lang.String,boolean,com.taobao.tae.sdk.web.form.ModuleForm,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/module//form/{templateDirectoryName}/{moduleDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ModuleManagerController.getEditModuleFormUI(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/page//delete/{templateDirectoryName}/{pageFileName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.PageManagerController.removePage(java.lang.String,java.lang.String,com.taobao.tae.sdk.web.form.PageForm,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/page//form/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.PageManagerController.getPageFormUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/page//edit/{templateDirectoryName}/{pageFileName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.PageManagerController.getEditPageFormUI(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/page//submit/{templateDirectoryName}/{editMode}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.PageManagerController.submitPageForm(java.lang.String,boolean,com.taobao.tae.sdk.web.form.PageForm,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/system/settings/submit],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.SystemManagerController.submit(java.lang.String,org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/system/enable/production/mode],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.SystemManagerController.enableProductionMode(org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/system/enable/debug/mode],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.SystemManagerController.enableDebugMode(org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/system/module/html/content/synchronize],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.SystemManagerController.synchronizeSystemModuleHtmlContent(org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/system/settings],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.SystemManagerController.getSettingsUI(org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//module/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplateModuleUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//layout/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplateLayoutUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//guide/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplateGuideUI(java.lang.String,org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//theme/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplateThemeUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//assemble/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplateAssembleUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//publish/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplatePublishUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//list/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplatesListIndexUI(org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//list/{page}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplatesListUI(int,org.springframework.ui.Model)
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//form],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getTemplateFormUI(org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//form/{templateDirectoryName}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.getEditTemplateFormUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//submit/{editMode}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.submitTemplateForm(boolean,com.taobao.tae.sdk.web.form.TemplateForm,org.springframework.validation.BindingResult,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/template//package/{templateDirectoryName}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.TemplateManagerController.packageTemplate(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/theme//submit/{templateDirectoryName}/{editMode}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ThemeManagerController.submit(java.lang.String,boolean,com.taobao.tae.sdk.web.form.ThemeForm,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/theme//form/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ThemeManagerController.getTemplateThemeFormUI(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/theme//form/{templateDirectoryName}/{themeName}/{editMode}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ThemeManagerController.getEditTemplateThemeFormUI(java.lang.String,java.lang.String,boolean,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/man/theme//delete/{templateDirectoryName}/{theme}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.manager.ThemeManagerController.deleteTemplateTheme(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/module/render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.ModuleRenderController.render(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/module/render/{templateDirectoryName}/{moduleID}/{themeName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.ModuleRenderController.render(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/module/render/{templateDirectoryName}/{moduleID}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.ModuleRenderController.render(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/module/preview/{templateDirectoryName}/{moduleID}/{moduleInstanceID}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.ModuleRenderController.previewModule(java.lang.String,java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/module/form/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.ModuleRenderController.moduleForm(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/module/raw-render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.taobao.tae.sdk.web.controller.render.ModuleRenderController.rawRender(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.io.Writer) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/htdocs/{templateDirectoryName}/{pageName}/{theme}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.PageRenderController.render(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/htdocs/{templateDirectoryName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.PageRenderController.render(java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/htdocs/{templateDirectoryName}/{pageName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.taobao.tae.sdk.web.controller.render.PageRenderController.render(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/htdocs/{templateDirectoryName}/{pageName}/assets/images/{resourceFile}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.taobao.tae.sdk.web.controller.render.PageRenderController.handleResource(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/htdocs/{templateDirectoryName}/{pageName}/{theme}/assets/images/{resourceFile}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.taobao.tae.sdk.web.controller.render.PageRenderController.handleResource(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/resource/combined/css/{templateDirectoryName}/{themeName}/{moduleIDsCSV}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.taobao.tae.sdk.web.controller.resource.ResourceController.outputModulesCombinedCssResources(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/resource/combined/secure/js/{templateDirectoryName}/{moduleIDsCSV}/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.taobao.tae.sdk.web.controller.resource.ResourceController.outputLocalModuleCombinedSecureJsResources(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/resource/combined/js/{templateDirectoryName}/{moduleIDsCSV}/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.taobao.tae.sdk.web.controller.resource.ResourceController.outputLocalModuleCombinedRawJsResources(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2012-06-25 18:12:58 AbstractHandlerMethodMapping#registerHandlerMethod [INFO]: Mapped "{[/resource/extra/css/{templateDirectoryName}/{themeName}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.taobao.tae.sdk.web.controller.resource.ResourceController.outputTemplateExtraCss(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/remove] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/remove.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/remove/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/add] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/add.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/add/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/module/params/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/module/params/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/module/params/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/category/chooser/save] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/category/chooser/save.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/category/chooser/save/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/save] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/save.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/{itemParameterName}/{itemID}/item/chooser/save/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/item/chooser/query] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/item/chooser/query.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/item/chooser/query/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/operation] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/operation.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/operation/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/save/page/layout/{templateDirectoryName}/{pageFileName}] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/save/page/layout/{templateDirectoryName}/{pageFileName}.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/save/page/layout/{templateDirectoryName}/{pageFileName}/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/debug/{templateDirectoryName}/{pageFileName}] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/debug/{templateDirectoryName}/{pageFileName}.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/debug/{templateDirectoryName}/{pageFileName}/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/debug/{templateDirectoryName}/{pageFileName}/{themeName}] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/debug/{templateDirectoryName}/{pageFileName}/{themeName}.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/debug/{templateDirectoryName}/{pageFileName}/{themeName}/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/list] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/list.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/{templateDirectoryName}/{pageFileName}/module/list/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/layout/{templateDirectoryName}/{pageFileName}] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/layout/{templateDirectoryName}/{pageFileName}.*] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/design/page/layout/{templateDirectoryName}/{pageFileName}/] onto handler 'designController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Root mapping to handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [//index] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [//index.*] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [//index/] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man//] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man//index] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man//index.*] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man//index/] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah/] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah/index] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah/index.*] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah/index/] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah//] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah//index] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah//index.*] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/_ah//index/] onto handler 'indexController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//delete/{templateDirectoryName}/{moduleDirectoryName}] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//delete/{templateDirectoryName}/{moduleDirectoryName}.*] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//delete/{templateDirectoryName}/{moduleDirectoryName}/] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//form/{templateDirectoryName}] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//form/{templateDirectoryName}.*] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//form/{templateDirectoryName}/] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//submit/{templateDirectoryName}/{editMode}] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//submit/{templateDirectoryName}/{editMode}.*] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//submit/{templateDirectoryName}/{editMode}/] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//form/{templateDirectoryName}/{moduleDirectoryName}] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//form/{templateDirectoryName}/{moduleDirectoryName}.*] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/module//form/{templateDirectoryName}/{moduleDirectoryName}/] onto handler 'moduleManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//delete/{templateDirectoryName}/{pageFileName}] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//delete/{templateDirectoryName}/{pageFileName}.*] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//delete/{templateDirectoryName}/{pageFileName}/] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//form/{templateDirectoryName}] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//form/{templateDirectoryName}.*] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//form/{templateDirectoryName}/] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//edit/{templateDirectoryName}/{pageFileName}] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//edit/{templateDirectoryName}/{pageFileName}.*] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//edit/{templateDirectoryName}/{pageFileName}/] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//submit/{templateDirectoryName}/{editMode}] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//submit/{templateDirectoryName}/{editMode}.*] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/page//submit/{templateDirectoryName}/{editMode}/] onto handler 'pageManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/settings/submit] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/settings/submit.*] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/settings/submit/] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/enable/production/mode] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/enable/production/mode.*] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/enable/production/mode/] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/enable/debug/mode] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/enable/debug/mode.*] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/enable/debug/mode/] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/module/html/content/synchronize] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/module/html/content/synchronize.*] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/module/html/content/synchronize/] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/settings] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/settings.*] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/system/settings/] onto handler 'systemManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//module/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//module/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//module/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//layout/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//layout/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//layout/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//guide/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//guide/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//guide/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//theme/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//theme/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//theme/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//assemble/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//assemble/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//assemble/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//publish/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//publish/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//publish/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//list/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//list/{page}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//list/{page}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//list/{page}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//form] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//form.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//form/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//form/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//form/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//form/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//submit/{editMode}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//submit/{editMode}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//submit/{editMode}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//package/{templateDirectoryName}] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//package/{templateDirectoryName}.*] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/template//package/{templateDirectoryName}/] onto handler 'templateManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//submit/{templateDirectoryName}/{editMode}] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//submit/{templateDirectoryName}/{editMode}.*] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//submit/{templateDirectoryName}/{editMode}/] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//form/{templateDirectoryName}] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//form/{templateDirectoryName}.*] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//form/{templateDirectoryName}/] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//form/{templateDirectoryName}/{themeName}/{editMode}] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//form/{templateDirectoryName}/{themeName}/{editMode}.*] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//form/{templateDirectoryName}/{themeName}/{editMode}/] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//delete/{templateDirectoryName}/{theme}] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//delete/{templateDirectoryName}/{theme}.*] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/man/theme//delete/{templateDirectoryName}/{theme}/] onto handler 'themeManagerController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}.*] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}/] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}/{themeName}] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}/{themeName}.*] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}/{themeName}/] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}.*] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/render/{templateDirectoryName}/{moduleID}/] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/preview/{templateDirectoryName}/{moduleID}/{moduleInstanceID}] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/preview/{templateDirectoryName}/{moduleID}/{moduleInstanceID}.*] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/preview/{templateDirectoryName}/{moduleID}/{moduleInstanceID}/] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/form/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/form/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}.*] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/form/{templateDirectoryName}/{pageFileName}/{moduleID}/{moduleInstanceID}/] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/raw-render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/raw-render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}.*] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/module/raw-render/{templateDirectoryName}/{moduleID}/{themeName}/{moduleInstanceID}/] onto handler 'moduleRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/{theme}] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/{theme}.*] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/{theme}/] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}.*] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}.*] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/assets/images/{resourceFile}] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/assets/images/{resourceFile}.*] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/assets/images/{resourceFile}/] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/{theme}/assets/images/{resourceFile}] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/{theme}/assets/images/{resourceFile}.*] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/htdocs/{templateDirectoryName}/{pageName}/{theme}/assets/images/{resourceFile}/] onto handler 'pageRenderController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/combined/css/{templateDirectoryName}/{themeName}/{moduleIDsCSV}] onto handler 'resourceController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/combined/css/{templateDirectoryName}/{themeName}/{moduleIDsCSV}.*] onto handler 'resourceController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/combined/css/{templateDirectoryName}/{themeName}/{moduleIDsCSV}/] onto handler 'resourceController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/combined/secure/js/{templateDirectoryName}/{moduleIDsCSV}/] onto handler 'resourceController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/combined/js/{templateDirectoryName}/{moduleIDsCSV}/] onto handler 'resourceController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/extra/css/{templateDirectoryName}/{themeName}] onto handler 'resourceController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/extra/css/{templateDirectoryName}/{themeName}.*] onto handler 'resourceController'
+2012-06-25 18:12:59 AbstractUrlHandlerMapping#registerHandler [INFO]: Mapped URL path [/resource/extra/css/{templateDirectoryName}/{themeName}/] onto handler 'resourceController'
+2012-06-25 18:12:59 FrameworkServlet#initServletBean [INFO]: FrameworkServlet 'springMVC': initialization completed in 1353 ms
+2012-06-25 18:12:59 Slf4jLog#info [INFO]: Opened D:\TAE_SDK\trunk\TAE_SDK\logs\2012_06_25.request.log
+2012-06-25 18:12:59 Slf4jLog#info [INFO]: Started SelectChannelConnector@0.0.0.0:8080
+2012-06-25 18:12:59 DefaultHandlerExceptionResolver#handleHttpRequestMethodNotSupported [WARN]: Request method 'HEAD' not supported
+2012-06-25 18:14:00 Slf4jLog#info [INFO]: org.mortbay.io.nio.SelectorManager$SelectSet@1e66f65 JVM BUG(s) - injecting delay1 times
+2012-06-25 18:14:00 Slf4jLog#info [INFO]: org.mortbay.io.nio.SelectorManager$SelectSet@1e66f65 JVM BUG(s) - recreating selector 1 times, canceled keys 0 times
