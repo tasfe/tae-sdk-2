@@ -12,7 +12,7 @@ SDKÆô¶¯ÎÄ¼þ´æ·ÅÔÚTAE_SDK/binÄ¿Â¼ÏÂ£¬WindowsÓÃ»§Ë«»÷¡°StartServer.bat¡±¡£MacÓÃ»§Æ
 Í¨¹ýSVN¹¤¾ß£¬¸üÐÂÒ»ÏÂ¡°¸üÐÂÈÕÖ¾.txt¡±ÎÄ¼þ£¬×ÐÏ¸ÔÄ¶Á¸üÐÂÈÕÖ¾ºó£¬ÔÙ¸üÐÂµ±Ç°Ä¿Â¼¡£
 
 4. SDK¸üÐÂºó£¬ÔõÃ´¿ª·¢Ä£°å
-µ±È·ÈÏSDK±»¸üÐÂÖ®ºó£¬µÚÒ»²½£¬ÔÄ¶Á¡°¸üÐÂÈÕÖ¾.txt¡±ÎÄ¼þ¡£È»ºó£¬½«ÄúµÄÄ£°åÄ¿Â¼·Åµ½TAE_SDK/htdocsÖÐ×Ö½Ú¿ª·¢¡£Èç¹ûÄúÒÑ¾­ÕâÃ´×öÁË£¬Ö»ÐèÒªÉý¼¶SDK¹¤¾ß£¬¾ÍÄÜÏíÊÜ×îÐÂµÄ¹¦ÄÜ¡£ÌØ±ðÌáÐÑ£ºÇë²»ÒªÊ¹ÓÃSVNÖÐµÄÌæ»»£¬·ñÔòÄúµÄÄ£°å½«±»¡°ÎÞÇé¡±µÄÉ¾³ý¡£Òò´Ë£¬Ó¦¸Ã±£³Ö¾­³£±¸·ÝÄ£°åµÄºÃÏ°¹ß¡£
+µ±È·ÈÏSDK±»¸üÐÂÖ®ºó£¬µÚÒ»²½£¬ÔÄ¶Á¡°¸üÐÂÈÕÖ¾.txt¡±ÎÄ¼þ¡£È»ºó£¬½«ÄúµÄÄ£°åÄ¿Â¼·Åµ½TAE_SDK/htdocsÖÐÖ±½Ó¿ª·¢¡£Èç¹ûÄúÒÑ¾­ÕâÃ´×öÁË£¬Ö»ÐèÒªÉý¼¶SDK¹¤¾ß£¬¾ÍÄÜÏíÊÜ×îÐÂµÄ¹¦ÄÜ¡£ÌØ±ðÌáÐÑ£ºÇë²»ÒªÊ¹ÓÃSVNÖÐµÄÌæ»»£¬·ñÔòÄúµÄÄ£°å½«±»¡°ÎÞÇé¡±µÄÉ¾³ý¡£Òò´Ë£¬Ó¦¸Ã±£³Ö¾­³£±¸·ÝÄ£°åµÄºÃÏ°¹ß¡£
 
 5. ÈçºÎ·´À¡Éè¼ÆÊ¦ÐèÇó¡¢SDKµÄBugºÍ¹¦ÄÜ¸Ä½ø£¿
 Çë½«Äú·¢ÏÖµÄÎÊÌâ·´À¡¼¯ÖÐµ½ÎÒÃÇµÄÂÛÌ³£¬µØÖ·Îª£ºhttp://bbs.zx.taobao.com/thread.php?fid=42
