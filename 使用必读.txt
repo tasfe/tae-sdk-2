@@ -17,6 +17,9 @@ SDKÆô¶¯ÎÄ¼þ´æ·ÅÔÚTAE_SDK/binÄ¿Â¼ÏÂ£¬WindowsÓÃ»§Ë«»÷¡°StartServer.bat¡±¡£MacÓÃ»§Æ
 5. ÈçºÎ·´À¡Éè¼ÆÊ¦ÐèÇó¡¢SDKµÄBugºÍ¹¦ÄÜ¸Ä½ø£¿
 Çë½«Äú·¢ÏÖµÄÎÊÌâ·´À¡¼¯ÖÐµ½ÎÒÃÇµÄÂÛÌ³£¬µØÖ·Îª£ºhttp://bbs.zx.taobao.com/thread.php?fid=42
 
+6.µ±²¿·ÖÎÄ¼þ¸üÐÂÊ§°ÜÊ±£¬ÔõÃ´°ì£¿
+Ê×ÏÈ£¬È·¶¨ÄúµÄSDKÊÇ·ñÕýÔÚÔËÐÐ£¬SDKÔÚÔËÐÐÖÐ£¬Ä³Ð©ÎÄ¼þ½«»á±»SDK½ø³ÌÕ¼ÓÃ£¬Òò´ËSVN¸üÐÂÊ±£¬ÎÞ·¨ÏòÄ¿±êÎÄ¼þÐ´Èë¡£ËùÒÔ£¬Äú±ØÐëÏÈÍ£Ö¹SDK£¬ÔÙÖØÊÔSVN¸üÐÂ¡£
+
 ÌØ±ðËµÃ÷£º
 ¹ØÓÚ"htdocs"Ä¿Â¼£¬µ±Äú¸üÐÂÍêSVNÖ®ºó£¬µ±·¢ÏÖÔ­ÓÐµÄhtdocsÄ¿Â¼²»¼ûÁË£¬ÄÑÃâ¸Ðµ½Ææ¹Ö¡£´ÓÏÖÔÚ¿ªÊ¼£¬µ±SDKÆô¶¯Ê±£¬³ÌÐò»áÅÐ¶Ï¡°htdocs¡±Ä¿Â¼ÊÇ·ñ´æÔÚ£¬Èç¹û²»´æÔÚ£¬½«×Ô¶¯´´½¨¡£Èç¹û´æÔÚ£¬²»×ö´¦Àí¡£ÀíÓÉÈçÏÂ£ºÔÚÍÅ¶Ó¿ª·¢SDKÄ£°åÖÐ£¬htdocsÄ¿Â¼ºÜÓÐ¿ÉÄÜ½«×÷ÎªÄúÍÅ¶Ó¿ª·¢Ä£°åµÄSVNÒ»¸öÄ¿Â¼,ÎªÁË±ÜÃâSDKµÄSVNÓëÄúÍÅ¶ÓµÄSVN·¢Éú³åÍ»¡£Òò´Ë£¬htdocsÄ¿Â¼²»ÔÙ×÷ÎªSDK SVNµÄÄ¿Â¼¡£ÓÉÓÚSDK SVN¶ÔÓÚÉè¼ÆÊ¦¶øÑÔ£¬ÊÇ×Ô¶ÁµÄ£¬ÎÞ·¨Ìá½»µ½SDK SVNÉÏ£¬Òò´ËÉè¼ÆÊ¦µÄÄ£°å²»»áÏà»¥Ó°Ïì¡£
 
