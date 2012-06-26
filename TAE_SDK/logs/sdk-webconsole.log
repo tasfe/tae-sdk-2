@@ -1,2 +1,0 @@
-2012-06-25 18:13:12 StaticResourceServletFilter#outputResourceFile [ERROR]: 静态资源文件[请求URI：/favicon.ico，路径：D:\TAE_SDK\trunk\TAE_SDK\htdocs\favicon.ico]无法找到！
-2012-06-25 18:17:51 StaticResourceServletFilter#outputResourceFile [ERROR]: 静态资源文件[请求URI：/favicon.ico，路径：D:\TAE_SDK\trunk\TAE_SDK\htdocs\favicon.ico]无法找到！
