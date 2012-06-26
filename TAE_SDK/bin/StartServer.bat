@@ -18,9 +18,13 @@ echo JAVA_HOME does not point at a JDK or JRE.  Either set the JAVA_HOME environ
 goto end 
 
 :JavaFound
-set DEBUG_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
 set JETTY_HOME=%DCSDK_HOME%\lib\jetty
-set JAVA_OPTS=-DDCSDK_HOME=%DCSDK_HOME% -Dfile.encoding=GBK -Dmain.class=com.taobao.tae.sdk.platform.Main -DSTART=%DCSDK_HOME%\conf\start.config -Djava.io.tmpdir=%DCSDK_HOME%\temp -Dassets.host=a.tbcdn.cn 
+set JAVA_OPTS=-DDCSDK_HOME=%DCSDK_HOME%
+set JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=GBK
+set JAVA_OPTS=%JAVA_OPTS% -Dmain.class=com.taobao.tae.sdk.platform.Main
+set JAVA_OPTS=%JAVA_OPTS% -DSTART=%DCSDK_HOME%\conf\start.config
+set JAVA_OPTS=%JAVA_OPTS% -Djava.io.tmpdir=%DCSDK_HOME%\temp
+set JAVA_OPTS=%JAVA_OPTS% -Dassets.host=a.tbcdn.cn 
 
  
 for %%a in (%JETTY_HOME%\start*.jar) do  set START_JAR=%%a
