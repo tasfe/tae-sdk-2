@@ -24,7 +24,7 @@ set JAVA_OPTS=-DDCSDK_HOME=%DCSDK_HOME% -Dfile.encoding=GBK
 set JAVA_OPTS=%JAVA_OPTS% -Dmain.class=com.taobao.tae.sdk.platform.Main 
 set JAVA_OPTS=%JAVA_OPTS% -DSTART=%DCSDK_HOME%\conf\start.config 
 set JAVA_OPTS=%JAVA_OPTS% -Djava.io.tmpdir=%DCSDK_HOME%\temp 
-set JAVA_OPTS=%JAVA_OPTS% -Dkissy.uri=/s/kissy/1.2.0/kissy.js
+set JAVA_OPTS=%JAVA_OPTS% -Dkissy.uri=/s/kissy/1.2.0/kissy-min.js
 set JAVA_OPTS=%JAVA_OPTS% -Ddevelopment.mode=true
 
  
