@@ -7,6 +7,7 @@ SDKÆô¶¯ÎÄ¼þ´æ·ÅÔÚTAE_SDK/binÄ¿Â¼ÏÂ£¬WindowsÓÃ»§Ë«»÷¡°StartServer.bat¡±¡£MacÓÃ»§Æ
 
 2. ÈçºÎÊ¹ÓÃ¡°¸üÐÂÈÕÖ¾¡±ÎÄ¼þ
 Ê×ÏÈ£¬Í¨¹ýSVN¸üÐÂ£¬±£Ö¤¡°¸üÐÂÈÕÖ¾.txt¡±ÎÄ¼þÎª×îÐÂ°æ±¾µÄ¡£¸üÐÂÈÕÖ¾½«»á¼ÇÂ¼SDK¹¤¾ß¡¢ÎÄµµµÈ¸üÐÂÄÚÈÝ¡£ÇëÉè¼ÆÊ¦Îñ±Ø×ÐÏ¸ÔÄ¶Á¡£
+»òÕß¡°²Î¿¼¡°SVNµÄ¸üÐÂÈÕÖ¾¡£
 
 3. ÈçºÎ±£³ÖSDK×îÐÂ£¿
 Í¨¹ýSVN¹¤¾ß£¬¸üÐÂÒ»ÏÂ¡°¸üÐÂÈÕÖ¾.txt¡±ÎÄ¼þ£¬×ÐÏ¸ÔÄ¶Á¸üÐÂÈÕÖ¾ºó£¬ÔÙ¸üÐÂµ±Ç°Ä¿Â¼¡£
