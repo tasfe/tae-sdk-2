@@ -17,3 +17,9 @@
 	4.[SDK工具]：修复模块内联style属性时，模块渲染结果成null的错误
 	
 	
+2012/06/29:
+	1.[SDK工具]：修正ItemManager queryByIds方法 sortType不工作
+	2.[SDK工具]：修正宝贝选择器中文查询失效
+	
+	
+	
