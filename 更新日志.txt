@@ -1,9 +1,11 @@
 [更新日志]
 2012/07/05:
-1.CSS输出乱码问题
-2.调整宝贝选择器界面中“已选择”的宝贝出现顺序，将按照用户选择的顺序。
-3.解决ptype=number时输出字符的问题，目前ptype=number后，将输出数字类型，未来支持更多ptype格式。
-4.为Mac SDK启动脚本startServer.sh提供添加配置信息，与Windows功能保持一致。
+1.[SDK工具]：CSS输出乱码问题
+2.[SDK工具]：调整宝贝选择器界面中“已选择”的宝贝出现顺序，将按照用户选择的顺序。
+3.[SDK工具]：解决ptype=number时输出字符的问题，目前ptype=number后，将输出数字类型，未来支持更多ptype格式。
+4.[SDK工具]：为Mac SDK启动脚本startServer.sh提供添加配置信息，与Windows功能保持一致。
+5.[SDK工具]：修复当模块参数保存时，类目选择器参数被清除
+6.[SDK工具]：修复当模块参数保存时，参数值为空不保存的问题
 
 2012/06/29:
 	1.[SDK工具]：修正ItemManager queryByIds方法 sortType不工作
