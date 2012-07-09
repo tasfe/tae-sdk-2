@@ -1,4 +1,23 @@
 [更新日志]
+
+2012/07/09:
+1.[SDK工具]：页面装修时，自定义加载全局皮肤extra.css。
+	默认装修不加载。如果需要加载全局CSS，请看以下教程：
+	默认的装修URL：http://localhost:8080/design/page/debug/test/index.json/，
+	其中URI：/design/page/debug/是固定路径，test为模板目录名称，index.json为调试页面的名称，其规律模式为：
+	http://localhost:{port}/design/page/debug/{templateDirectory}/{pageFileName}/  
+	a)切换皮肤
+		URL模式：http://localhost:{port}/design/page/debug/{templateDirectory}/{pageFileName}/{themeName}
+		比如，默认URL：http://localhost:8080/design/page/debug/test/index.json/
+		等价于：http://localhost:8080/design/page/debug/test/index.json/default/，
+		切换红色皮肤：http://localhost:8080/design/page/debug/test/index.json/red/
+	b)加载全局extra.css
+		URL模式：http://localhost:{port}/design/page/debug/{templateDirectory}/{pageFileName}/{themeName}/{loadExtraCss}
+		比如，默认URL：http://localhost:8080/design/page/debug/test/index.json/
+		等价于：http://localhost:8080/design/page/debug/test/index.json/default/false/，
+		加载默认皮肤extra.css：http://localhost:8080/design/page/debug/test/index.json/default/true/
+		
+		
 2012/07/05:
 1.[SDK工具]：CSS输出乱码问题
 2.[SDK工具]：调整宝贝选择器界面中“已选择”的宝贝出现顺序，将按照用户选择的顺序。
