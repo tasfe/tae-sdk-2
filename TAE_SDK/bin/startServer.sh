@@ -20,11 +20,20 @@ java_found(){
 	JETTY_HOME=$DCSDK_HOME/lib/jetty
 	JAVA_OPTS="$JAVA_OPTS -DDCSDK_HOME=$DCSDK_HOME"
 	JAVA_OPTS="$JAVA_OPTS -Dmain.class=com.taobao.tae.sdk.platform.Main"
-	JAVA_OPTS="$JAVA_OPTS -Djava.io.tmpdir=$DCSDK_HOME/temp"
 	JAVA_OPTS="$JAVA_OPTS -DSTART=$DCSDK_HOME/conf/start.config"
+	JAVA_OPTS="$JAVA_OPTS -Djava.io.tmpdir=$DCSDK_HOME/temp"	
+	JAVA_OPTS="$JAVA_OPTS -Duser.home=$DCSDK_HOME/temp"
+	JAVA_OPTS="$JAVA_OPTS -Duser.dir=$DCSDK_HOME/temp"
+	
 	JAVA_OPTS="$JAVA_OPTS -Dassets.host=a.tbcdn.cn"
 	JAVA_OPTS="$JAVA_OPTS -Dkissy.uri=/s/kissy/1.2.0/kissy-min.js"
 	JAVA_OPTS="$JAVA_OPTS -Dsystem.module.common.js.uri=/apps/taesite/platinum/scripts/common/mods/shop/"
+	JAVA_OPTS="$JAVA_OPTS -Dcaja.service.uri=http://zxn.taobao.com/tbcajaService.htm"
+	JAVA_OPTS="$JAVA_OPTS -Dsite.admin.root.url=http://siteadmin.taobao.com"	
+
+	JAVA_OPTS="$JAVA_OPTS -Ddevelopment.mode=false"
+	JAVA_OPTS="$JAVA_OPTS -Denable.sdk.mode=true"
+	
 	START_JAR=""
 	for _START_JAR in $JETTY_HOME/start*.jar
 	do
