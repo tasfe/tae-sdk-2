@@ -29,7 +29,8 @@ java_found(){
 	JAVA_OPTS="$JAVA_OPTS -Dkissy.uri=/s/kissy/1.2.0/kissy-min.js"
 	JAVA_OPTS="$JAVA_OPTS -Dsystem.module.common.js.uri=/apps/taesite/platinum/scripts/common/mods/shop/"
 	JAVA_OPTS="$JAVA_OPTS -Dcaja.service.uri=http://zxn.taobao.com/tbcajaService.htm"
-	JAVA_OPTS="$JAVA_OPTS -Dsite.admin.root.url=http://siteadmin.taobao.com"	
+	JAVA_OPTS="$JAVA_OPTS -Dsite.admin.root.url=http://siteadmin.taobao.com"
+	JAVA_OPTS="$JAVA_OPTS -Duser.nick=c≤‚ ‘’À∫≈151"
 
 	JAVA_OPTS="$JAVA_OPTS -Ddevelopment.mode=false"
 	JAVA_OPTS="$JAVA_OPTS -Denable.sdk.mode=true"
