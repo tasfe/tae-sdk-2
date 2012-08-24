@@ -22,22 +22,21 @@ set DEBUG_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=
 set JETTY_HOME=%DCSDK_HOME%\lib\jetty
 set JAVA_OPTS=-DDCSDK_HOME=%DCSDK_HOME%
 set JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=GBK
-set JAVA_OPTS=%JAVA_OPTS% -Dmain.class=com.taobao.tae.sdk.platform.Main 
-set JAVA_OPTS=%JAVA_OPTS% -DSTART=%DCSDK_HOME%\conf\start.config 
-set JAVA_OPTS=%JAVA_OPTS% -Djava.io.tmpdir=%DCSDK_HOME%\temp 
+set JAVA_OPTS=%JAVA_OPTS% -Dmain.class=com.taobao.tae.sdk.platform.Main
+set JAVA_OPTS=%JAVA_OPTS% -DSTART=%DCSDK_HOME%\conf\start.config
+set JAVA_OPTS=%JAVA_OPTS% -Djava.io.tmpdir=%DCSDK_HOME%\temp
 set JAVA_OPTS=%JAVA_OPTS% -Duser.home=%DCSDK_HOME%\temp
 set JAVA_OPTS=%JAVA_OPTS% -Duser.dir=%DCSDK_HOME%\temp
 
 set JAVA_OPTS=%JAVA_OPTS% -Dassets.host=a.tbcdn.cn
 set JAVA_OPTS=%JAVA_OPTS% -Dkissy.uri=/s/kissy/1.2.0/kissy-min.js
 set JAVA_OPTS=%JAVA_OPTS% -Dsystem.module.common.js.uri=/apps/taesite/platinum/scripts/common/mods/
-set JAVA_OPTS=%JAVA_OPTS% -Dcaja.service.uri=http://zxn.daily.taobao.net/tbcajaService.htm
-set JAVA_OPTS=%JAVA_OPTS% -Dsite.admin.root.url=http://siteadmin.daily.taobao.net
-set JAVA_OPTS=%JAVA_OPTS% -Dsystem.modules.list.sync.url=http://siteadmin.daily.taobao.net/module/singleModule.htm?want=all
+set JAVA_OPTS=%JAVA_OPTS% -Dcaja.service.uri=http://zxn.taobao.com/tbcajaService.htm
+set JAVA_OPTS=%JAVA_OPTS% -Dsite.admin.root.url=http://siteadmin.taobao.com
+set JAVA_OPTS=%JAVA_OPTS% -Duser.nick=c≤‚ ‘’À∫≈154
 
 set JAVA_OPTS=%JAVA_OPTS% -Ddevelopment.mode=false
 set JAVA_OPTS=%JAVA_OPTS% -Denable.sdk.mode=true
-
 
 
 
