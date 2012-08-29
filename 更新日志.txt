@@ -1,13 +1,47 @@
 [更新日志]
+2012/08/29:
+1.[SDK工具-问题修复] :
+	a) SDK工具中产品模式中select控件参数存在问题
+	b) EXTR_PREFIX_ALL| EXTR_OVERWRITE 丢失的问题
+	c) 模块参数ptype=number时，小数点渲染失败
+	d) 修复模块PHP和CSS文件中的错误提示内容：
+		修改后的PHP文件提示：3.元素class属性值禁止以"tb-"和"J_T"字符开头,除[tb-module,J_TWidget,J_TokenSign,J_CartPluginTrigger]以外
+		修改后的CSS文件提示：1. CSS选择器必须包含 ".tshop-um-*"，禁止使用模块页面元素的ID选择器
+		
+2.[SDK工具-功能提升]
+	a) $regionWidth变量的支持，其作用是让模块知晓所在布局栏位的宽度。比如在190栏位，返回值为190，以此类推。
+		示例代码：
+		if($regionWidth == 190){
+			//展示190布局下的
+		}
+	b) 模块公用PHP代码支持，其作用是让所有模块能够代码复用，减少冗余。
+		使用方法：		如果新建、编辑模板的话，模板目录下自动创建common.php,该common.php为modules目录下的所有本地模块tshop-um-*.php文件所共享
+		其他情况，请自行创建common.php
+		只要common.php文件存在，任何设计师模块PHP代码都能复用其中的代码
+		特别注意：模块PHP文件和common.php内容空间大小限制：10KB，如果违反规则，将会影响模板上传和升级
+	c) 新SNS支持（线上系统次日支持）
+		添加jiathis的SNS分享支持（form表单形式）
+		添加google的二维码支持
+	d）恢复（添加）收藏和购物车类选择器的支持：J_TokenSign，J_CartPluginTrigger（模块HTML元素class允许值为：tb-module,J_TWidget,J_TokenSign,J_CartPluginTrigger）
+	
+	e）开放所有官方宝贝图片尺寸格式（持续更新）：		300,24x24,30x30,40x40,60x60,70x70,80x80,100x100,110x110,120x120,160x160,170x170,210x210,250x250,310x310,430x430,670x670,128x128,90x90,32x32,64x64,400x400,460x460,480x480,200x200,16x16,570x570,48x48,72x72,145x145,20x20,36x36,230x230,240x240,130x130,290x290
+	
+	
+
 2012/08/24:
 1.[SDK工具-数据接口升级] 提供折扣价格，简单使用说明：
 	调用方法：$item->discountPrice
 	该数据接口返回的折扣价格，在SDK中是随机数，在线上是真实的折扣价格。
-	特别注意：该接口可能返回null，表示没有折扣价，设计师应该注意代码写法。
+	特别注意：该接口可能返回null，表示没有折扣价，设计师应该注意代码写法。返回值可能存在多位小数，请设计师自行做格式化。
 	例如：if($item->discountPrice) {
-			//说明折扣价存在，编写逻辑
+			//说明折扣价存在，编写逻辑	
+			//格式化保留两位小数，参考资料：http://php.net/manual/en/function.number-format.php
+			echo number_format($item->discountPrice,2);
 		  }
-	
+	如果线上$item->discountPrice 与$item->price的数值相等的话，说明没有折扣。	  
+	例如：if($item->discountPrice ==$item->price){
+		  }
+		  	
 2.[SDK工具-软件升级] 升级PHP渲染引擎，与线上系统保持一致
 					 
 3.[SDK工具-问题修复] 
