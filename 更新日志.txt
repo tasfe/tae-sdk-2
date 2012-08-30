@@ -1,4 +1,19 @@
 [更新日志]
+2012/08/30:
+1.[SDK工具-问题修复] :
+	a) 修复无法同步指定用户店铺的系统模块内容
+	b) 修复当模块公用代码PHP文件不存在时，模块渲染失败的问题
+	c) 修复切换商品图片格式时，图片不显示的问题，同时兼容对老图片格式支持，不过部分设计师老的PHP代码需要修改。
+		新增三个图片格式：
+		b = 220x220
+		m = 120x120
+		sum = 80x80
+		代码使用方法：
+		$item->getPicUrl("sum"); 结果：http://img03.taobaocdn.com/bao/uploaded/i3/T1mwjoXc0fXXaHjx36_061829.jpg_sum.jpg
+		$item->getPicUrl("m"); 结果：http://img03.taobaocdn.com/bao/uploaded/i3/T1mwjoXc0fXXaHjx36_061829.jpg_m.jpg
+		$item->getPicUrl("b"); 结果：http://img03.taobaocdn.com/bao/uploaded/i3/T1mwjoXc0fXXaHjx36_061829.jpg_b.jpg
+	d) 接口代码恢复：$shopManager接口,将继续使用;	
+	
 2012/08/29:
 1.[SDK工具-问题修复] :
 	a) SDK工具中产品模式中select控件参数存在问题
@@ -6,7 +21,7 @@
 	c) 模块参数ptype=number时，小数点渲染失败
 	d) 修复模块PHP和CSS文件中的错误提示内容：
 		修改后的PHP文件提示：3.元素class属性值禁止以"tb-"和"J_T"字符开头,除[tb-module,J_TWidget,J_TokenSign,J_CartPluginTrigger]以外
-		修改后的CSS文件提示：1. CSS选择器必须包含 ".tshop-um-*"，禁止使用模块页面元素的ID选择器
+		修改后的CSS文件提示：1. CSS选择器必须包含 ".tshop-*"，禁止使用模块页面元素的ID选择器
 		
 2.[SDK工具-功能提升]
 	a) $regionWidth变量的支持，其作用是让模块知晓所在布局栏位的宽度。比如在190栏位，返回值为190，以此类推。
