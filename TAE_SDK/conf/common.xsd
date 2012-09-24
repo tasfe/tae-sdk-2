@@ -32,6 +32,14 @@
             </xs:documentation>
 		</xs:annotation>
 	</xs:element>
+	
+	<xs:element name="included-app" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>
+					引入的应用
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
 
 	<xs:element name="css" type="xs:string">
 		<xs:annotation>

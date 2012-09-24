@@ -118,7 +118,7 @@
         </New>
     </Set>
 
-
+	<!-- 
     <New id="DCSDK_DB" class="org.mortbay.jetty.plus.naming.Resource">
         <Arg/>
         <Arg>jdbc/DCSDK_DB</Arg>
@@ -131,6 +131,7 @@
             </New>
         </Arg>
     </New>
+     -->
 
     <!-- =========================================================== -->
     <!-- Configure the context deployer                              -->

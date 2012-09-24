@@ -19,6 +19,7 @@
 				<xs:element ref="description" />
 				<xs:element ref="requiredCache" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="supportedWidth" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="included-app" minOccurs="0" maxOccurs="1" />
 				<xs:element ref="themes" />
 				<xs:element ref="parameters" minOccurs="0" maxOccurs="1" />
 			</xs:sequence>

@@ -6,7 +6,6 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-            classpath:/META-INF/config/spring/spring-app-config.xml
             classpath:/META-INF/config/spring/spring-app-service.xml
         </param-value>
 	</context-param>
@@ -38,16 +37,17 @@
 	</filter-mapping>
 	<servlet>
 		<servlet-name>AppRenderServlet</servlet-name>
-		<servlet-class>com.taobao.tae.sdk.view.servlet.AppRenderServlet</servlet-class>
+		<servlet-class>com.taobao.tae.sdk.app.view.servlet.AppRenderServlet</servlet-class>
 		<init-param>
 			<param-name>script-encoding</param-name>
 			<param-value>GBK</param-value>
 		</init-param>
+		<load-on-startup>0</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>AppRenderServlet</servlet-name>
-		<url-pattern>*.php</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 </web-app>
 
