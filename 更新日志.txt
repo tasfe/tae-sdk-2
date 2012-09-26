@@ -1,15 +1,36 @@
 [更新日志]
+2012/09/26
+1.[SDK工具-重大修改] ：
+  a) 修改SDK TAE Open API接口定义，请参考SDK根目录中的tae_open_api.php和topclient.php（TOP应用的支持）
+  b) 添加SDK Open API 接口定义参考文件：sdk_open_api.php（SDK根目录中）
+  c) SDK模板打包验证规则修改：
+	 * 资源文件数量验证：系统模块目录下的文件不再统计范畴，资源文件（不包含目录）数量限制仍然是300个
+	 * 模块参数验证：添加模块参数类型的验证，比如ptype="number"的模块参数值为abc的话，会提示错误
+	 
+2.[SDK工具-问题修复] : 
+  b) 当TAE应用渲染失败时，提示信息错误问题
+
 2012/09/25:
 1.[SDK工具-问题修复] :
-	a) 修复LessCSS文件背景图片问题
-	a) 修复extra.css中模块公用样式被过滤的问题
-	
+	a) 修复LessCSS文件背景图片问题。实现限制：目前路径匹配算法不完美，请大家使用全路径值作为Less变量
+	   例如：
+	   定义如下：
+	   @picURL: assets/images/pic.jpg
+	   使用时：
+	   background-image:url(@picURL);
+	   
+	   如果使用如下，将不工作：
+	   @picFile: pic.jpg
+	   background-image:url(assets/images/@picFile);
+	   
+	a) 修复extra.css中模块公用样式被过滤的问题	
 
 
 2012/09/24:
 1.[SDK工具-重大修改] ：
 	a) SDK工具和线上开始对checkbox支持，并且多值分割符号为：@_@
 	   例如：$_MODULE['checkbox'] = "1@_@2@_@3"，表示选择值为1、2和3的选项，请注意checkbox
+    b) SDK JS功能添加IO Event支持，功能保持wiki文档一致。资源地址：http://wiki.zx.taobao.com/index.php/JS_API
 
 2.[SDK工具-系统优化] ：
 	a) LessCSS编译优化，解决前版本采用系统编译方式所带来的长时间等待。目前采用浏览器编译，大幅提升编译速度。而系统编译方式则在模板打包时执行
