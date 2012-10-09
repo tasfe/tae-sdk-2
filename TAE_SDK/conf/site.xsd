@@ -10,6 +10,7 @@
 				<xs:element ref="id" />
 				<xs:element ref="name" />
 				<xs:element ref="author" />
+				<xs:element ref="template-type" minOccurs="0"/>
 				<xs:element ref="thumbnail" />
 				<xs:element ref="language" />
 				<xs:element ref="version" />
@@ -18,7 +19,7 @@
 				<xs:element ref="description" />
 				<xs:element ref="global" />
 				<xs:element ref="themes" />
-				<xs:element ref="pages" minOccurs="0" />
+				<xs:element ref="pages" minOccurs="0" />	
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
@@ -55,6 +56,13 @@
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
+	</xs:element>
+	<xs:element name="template-type" type="templateType">
+		<xs:annotation>
+			<xs:documentation>
+				标记模板类型
+            </xs:documentation>
+		</xs:annotation>
 	</xs:element>
 	<xs:element name="language" type="xs:string">
 		<xs:annotation>
@@ -128,5 +136,5 @@
 			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
-
+	
 </xs:schema>

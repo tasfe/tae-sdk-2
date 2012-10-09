@@ -172,7 +172,22 @@
 			</xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
-
+	
+	<xs:simpleType name="templateType">
+		<xs:annotation>
+			<xs:documentation>
+				参数类型
+				特别提醒：SDK2开始，采用严格的schema的验证，因此templateType类型的值应该严格参考当前schema
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:int">
+		<xs:enumeration value="1"/>
+         <xs:enumeration value="2"/>
+         <xs:enumeration value="3"/>
+         <xs:enumeration value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
 	<xs:simpleType name="parameterType">
 		<xs:annotation>
 			<xs:documentation>
@@ -416,7 +431,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:attribute>
-
+			
 			<xs:attribute name="readonly" use="optional" type="xs:boolean" default="false">
 				<xs:annotation>
 					<xs:documentation>

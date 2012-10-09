@@ -19,7 +19,8 @@ goto end
 
 :JavaFound
 set JETTY_HOME=%DCSDK_HOME%\lib\jetty
-set JAVA_OPTS=-DDCSDK_HOME=%DCSDK_HOME%
+set JAVA_OPTS=%JAVA_OPTS% -javaagent:%DCSDK_HOME%/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar
+set JAVA_OPTS=%JAVA_OPTS% -DDCSDK_HOME=%DCSDK_HOME%
 set JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=GBK
 set JAVA_OPTS=%JAVA_OPTS% -Dmain.class=com.taobao.tae.sdk.platform.Main
 set JAVA_OPTS=%JAVA_OPTS% -DSTART=%DCSDK_HOME%\conf\start.config
@@ -37,6 +38,7 @@ set JAVA_OPTS=%JAVA_OPTS% -Duser.nick=c≤‚ ‘’À∫≈154
 set JAVA_OPTS=%JAVA_OPTS% -Ddevelopment.mode=false
 set JAVA_OPTS=%JAVA_OPTS% -Denable.sdk.mode=true
 
+set JAVA_OPTS=%JAVA_OPTS% -Ddisplay.template.number.per.page=10
 
 
 

@@ -18,7 +18,8 @@ start_jar_found(){
 
 java_found(){
 	JETTY_HOME=$DCSDK_HOME/lib/jetty
-	JAVA_OPTS="$JAVA_OPTS -DDCSDK_HOME=$DCSDK_HOME"
+	JAVA_OPTS="$JAVA_OPTS-javaagent:$DCSDK_HOME/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar"
+	JAVA_OPTS="$JAVA_OPTS -DDCSDK_HOME=$DCSDK_HOME"	
 	JAVA_OPTS="$JAVA_OPTS -Dmain.class=com.taobao.tae.sdk.platform.Main"
 	JAVA_OPTS="$JAVA_OPTS -DSTART=$DCSDK_HOME/conf/start.config"
 	JAVA_OPTS="$JAVA_OPTS -Djava.io.tmpdir=$DCSDK_HOME/temp"	
@@ -34,7 +35,9 @@ java_found(){
 
 	JAVA_OPTS="$JAVA_OPTS -Ddevelopment.mode=false"
 	JAVA_OPTS="$JAVA_OPTS -Denable.sdk.mode=true"
-	
+
+	JAVA_OPTS="$JAVA_OPTS -Ddisplay.template.number.per.page=10"
+
 	START_JAR=""
 	for _START_JAR in $JETTY_HOME/start*.jar
 	do
