@@ -1,4 +1,58 @@
 [更新日志]
+2012/10/09:
+1.[SDK工具-新功能]
+    a) 提供简易模板开发
+	b) 强制CSS内容验证，特别提醒凡是CSS定义中为空的话，均视为错误，尤其注意新增加的系统模块。
+
+
+2.[SDK工具-系统优化]：
+	a) Less异步编译采用文件修改监听的方式实现
+	b) 采用异步化操作，提升管理页面的请求相应速度
+	c) 软件瘦身，提高启动速度	
+	
+2012/10/08:
+1.[SDK工具-问题修复]:
+	a) 修复导航模块重复加载JS错误
+    b) 修复IE浏览器下，最新SDK JS功能失效的问题
+	c) 修复非法系统模块同步，排除重复的模块
+	
+2.[SDK工具-系统优化]:
+    a) 优化系统模块目录自动创建
+
+2012/09/29
+1.[SDK工具-系统优化]:
+  a) 模板全局样式extra.css验证错误信息提示优化，帮助设计师更好的定位错误
+  
+  b) Less CSS添加异步编译和同步编译，其中同步和异步编译由用户决定。请参考SDK工具中"系统设置" 内容。
+     特别提醒：如果异步编译存在的问题的话，首先，请镇定情绪，然后使用同步编译继续工作，最终将反馈问题给相关开发人员。
+	 
+	 
+  c) 调整"我的模板"页面中显示模板的个数：10个（之前为2个）。也可以根据设计师偏好自主配置-修改StartServer.bat或startServer.sh中的配置
+  -Ddisplay.template.number.per.page=10 中的数值。
+  
+  d) "我的模板"页面中和SDK首页模板展示顺序将以最近修改模板优先排序
+  
+2.[SDK工具-重大修改] ：
+  a) 为TAE应用添加权限角色访问控制
+  
+  其中，权限角色列表：
+	  匿名用户：anonymous
+	  店铺浏览者：shopcustomer和sitecustomer 
+	  app开发者：developer
+	  卖家：shopowner,siteowner
+  YAML配置（app.yml):
+  #安全和权限配置
+	security:
+	- {url: /, role: anonymous }
+	- {url: /itemlist, role: developer }
+	- {url: /report, role: shopowner} 
+	
+  当用户访问/itemlist时，需要developer权限。如果权限不够的话，会重定向到权限切换登录页面（URI：/login/form）
+  例如：http://vote-app.taobaoapps.net:8080/login/form
+  当用户输入用户名登录后，其输入值等于$context->browser->nick
+
+    
+	  
 2012/09/26
 1.[SDK工具-重大修改] ：
   a) 修改SDK TAE Open API接口定义，请参考SDK根目录中的tae_open_api.php和topclient.php（TOP应用的支持）
