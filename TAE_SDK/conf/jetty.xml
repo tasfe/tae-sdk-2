@@ -17,8 +17,8 @@
     <Set name="ThreadPool">
 
         <New class="org.mortbay.thread.concurrent.ThreadPool">
-          <Set name="corePoolSize">10</Set>
-          <Set name="maximumPoolSize">20</Set>
+          <Set name="corePoolSize">6</Set>
+          <Set name="maximumPoolSize">10</Set>
         </New>
 
         <!-- Optional Java 5 bounded threadpool with job queue
@@ -50,8 +50,8 @@
                 <Set name="port">
                     <SystemProperty name="jetty.port" default="8080"/>
                 </Set>
-                <Set name="maxIdleTime">30000</Set>
-                <Set name="Acceptors">2</Set>
+                <Set name="maxIdleTime">300000</Set>
+                <Set name="Acceptors">5</Set>
                 <Set name="statsOn">false</Set>
                 <Set name="confidentialPort">8443</Set>
                 <Set name="lowResourcesConnections">5000</Set>

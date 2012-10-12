@@ -20,6 +20,19 @@ goto end
 :JavaFound
 set DEBUG_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
 set JETTY_HOME=%DCSDK_HOME%\lib\jetty
+
+set JAVA_OPTS=%JAVA_OPTS% -client
+
+set JAVA_OPTS=%JAVA_OPTS% -XX:+AggressiveOpts
+set JAVA_OPTS=%JAVA_OPTS% -XX:+UseStringCache
+set JAVA_OPTS=%JAVA_OPTS% -XX:+UseCompressedStrings
+
+set JAVA_OPTS=%JAVA_OPTS% -XX:+UseParallelGC
+set JAVA_OPTS=%JAVA_OPTS% -XX:ParallelGCThreads=2
+
+set JAVA_OPTS=%JAVA_OPTS% -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:%DCSDK_HOME%\logs\gc.log
+set JAVA_OPTS=%JAVA_OPTS% -XX:ErrorFile=%DCSDK_HOME%\logs\jvm_error.log
+
 set JAVA_OPTS=%JAVA_OPTS% -javaagent:%DCSDK_HOME%/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar
 set JAVA_OPTS=%JAVA_OPTS% -DDCSDK_HOME=%DCSDK_HOME%
 set JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=GBK
