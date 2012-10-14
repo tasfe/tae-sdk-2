@@ -18,7 +18,6 @@ echo JAVA_HOME does not point at a JDK or JRE.  Either set the JAVA_HOME environ
 goto end 
 
 :JavaFound
-set DEBUG_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
 set JETTY_HOME=%DCSDK_HOME%\lib\jetty
 
 set JAVA_OPTS=%JAVA_OPTS% -client
@@ -28,7 +27,7 @@ set JAVA_OPTS=%JAVA_OPTS% -XX:+UseStringCache
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseCompressedStrings
 
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseParallelGC
-set JAVA_OPTS=%JAVA_OPTS% -XX:ParallelGCThreads=2
+set JAVA_OPTS=%JAVA_OPTS% -XX:ParallelGCThreads=%NUMBER_OF_PROCESSORS%
 
 set JAVA_OPTS=%JAVA_OPTS% -javaagent:%DCSDK_HOME%/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar
 set JAVA_OPTS=%JAVA_OPTS% -DDCSDK_HOME=%DCSDK_HOME%
@@ -53,7 +52,6 @@ set JAVA_OPTS=%JAVA_OPTS% -Ddisplay.template.number.per.page=10
 
 
 
-
  
 for %%a in (%JETTY_HOME%\start*.jar) do  set START_JAR=%%a
 if not "%START_JAR%"=="" goto StartJarFound
@@ -65,7 +63,7 @@ set JETTY_OPTS=-jar %START_JAR%  %DCSDK_HOME%\conf\jetty.xml
 goto JettyOptsSet
 
 :JettyOptsSet
-if defined JAVA_OPTS set JETTY_OPTS=%JAVA_OPTS% %DEBUG_OPTS% %JETTY_OPTS%
+if defined JAVA_OPTS set JETTY_OPTS=%JAVA_OPTS% %JETTY_OPTS%
 
 set PWD=%CD%
 cd /d "%JETTY_HOME%"
