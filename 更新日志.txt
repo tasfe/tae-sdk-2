@@ -3,6 +3,15 @@
 1.[SDK工具-问题修复]
 	a) 修复模板打包验证时，中文皮肤目录找不到的问题
 
+2.[SDK辅助开发工具]
+	a) 最新JDK下载：
+		Windows操作系统32位JDK ：http://www.kuaipan.cn/file/id_63428115682035756.htm
+		Windows操作系统64位JDK ：http://www.kuaipan.cn/file/id_63428115682035757.htm
+		Linux操作系统32位JDK ：http://www.kuaipan.cn/file/id_63428115682035758.htm
+		Linux操作系统64位JDK ：http://www.kuaipan.cn/file/id_63428115682035755.htm
+3.[SDK工具-调整优化]
+    a) 移除无用连接，减少请求等待时间
+
 2012/10/14:
 1.[SDK工具-调整优化]
 	a) SDK 性能提升：利用内存减少外存的开销
