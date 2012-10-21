@@ -51,6 +51,11 @@ set JAVA_OPTS=%JAVA_OPTS% -Denable.sdk.mode=true
 
 set JAVA_OPTS=%JAVA_OPTS% -Ddisplay.template.number.per.page=10
 
+set JAVA_OPTS=%JAVA_OPTS% -Doffline.mode
+
+set JAVA_OPTS=%JAVA_OPTS% -Dprmain.async.action.enabled
+set JAVA_OPTS=%JAVA_OPTS% -Dprmain.async.action.thread.pool.size=5
+
 
 
 
