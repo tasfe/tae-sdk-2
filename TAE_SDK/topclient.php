@@ -1,5 +1,6 @@
 <?php
 
+
 class LtLogger
 {
 	public $conf = array(
@@ -128,7 +129,7 @@ class TopClient
 
 	public $gatewayUrl = "http://gw.api.taobao.com/router/rest";
 
-	public $format = "xml";
+	public $format = "json";
 
 
 	public $checkRequest = true;
@@ -144,17 +145,19 @@ class TopClient
 		ksort($params);
 
 		$stringToBeSigned = $this->secretKey;
+         $appLog->info("sgin");
 		foreach ($params as $k => $v)
 		{
 			if("@" != substr($v, 0, 1))
 			{
 				$stringToBeSigned .= "$k$v";
+                $appLog->info($k."=".$v);
 			}
 		}
 		unset($k, $v);
 		$stringToBeSigned .= $this->secretKey;
-
-		return strtoupper(md5($stringToBeSigned));
+         $appLog->info(iconv("GBK","UTF-8", $stringToBeSigned)."===".urlencode_utf8($stringToBeSigned));
+		return strtoupper(md5(iconv("GBK","UTF-8", $stringToBeSigned)));
 	}
 
 	public function curl($url, $postFields = null)
@@ -176,7 +179,7 @@ class TopClient
 			foreach ($postFields as $k => $v)
 			{
 				if("@" != substr($v, 0, 1))				{
-					$postBodyString .= "$k=" . urlencode($v) . "&"; 
+					$postBodyString .= "$k=" . urlencode_utf8($v) . "&";
 				}
 				else
 				{
@@ -193,6 +196,7 @@ class TopClient
 			{
 				curl_setopt($ch, CURLOPT_POSTFIELDS, substr($postBodyString,0,-1));
 			}
+            $appLog->info("postBodyString=".$postBodyString);
 		}
 		$reponse = curl_exec($ch);
 		
@@ -265,7 +269,7 @@ class TopClient
 		$requestUrl = $this->gatewayUrl . "?";
 		foreach ($sysParams as $sysParamKey => $sysParamValue)
 		{
-			$requestUrl .= "$sysParamKey=" . urlencode($sysParamValue) . "&";
+			$requestUrl .= "$sysParamKey=" . urlencode_utf8($sysParamValue) . "&";
 		}
 		$requestUrl = substr($requestUrl, 0, -1);
 
@@ -278,8 +282,9 @@ class TopClient
 
 		try
 		{
-			$resp = $this->curl($requestUrl, $apiParams);
-            $appLog->info("result = ".utf8_decode($resp)."\n");
+			$resp = utf8_decode($this->curl($requestUrl, $apiParams));
+
+            $appLog->info("result = ".$resp."\n");
 		}
 		catch (Exception $e)
 		{

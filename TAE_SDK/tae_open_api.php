@@ -22,8 +22,8 @@ class FileStoreService
         return true;
     }
 
-      /**
-     * 获取文本文件的内容
+    /**
+     * 创建文件夹
      * @param string $dir_path   文件夹路径
      * @return int 0代表成功，其他失败
      */
@@ -77,11 +77,11 @@ class FileStoreService
     /**
      * 删除文件
      * @param $file_path  文件路径
-     * @return int 返回的resultcode
+     * @return int 0代表成功，其他失败
      */
     function deleteFile($file_path)
     {
-        return true;
+        return 0;
     }
 
 
