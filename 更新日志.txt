@@ -1,4 +1,37 @@
 [更新日志]
+2012/10/30
+1.[SDK工具-问题修复]
+	a) 修复TAE 数据库中文支持的问题
+	   详细说明：例如DML语句中的出现了中文时，语句执行结果超出期望。注意，线上TAE应用服务器经支持MySQL中文GBK环境。
+	   因此，在本地SDK开发TAE应用时，请使用如下PDO的数据库连接实例代码：
+	   
+	   $mysqlHost="localhost";
+	   $mysqlPort='3306';
+	   $dbName='vote_app';
+	   $username='root';
+	   $password='123456';
+	   $dbConnection='jdbc:mysql://' . $mysqlHost . ':' . $mysqlPort . '/' . $dbName . '?characterEncoding=GBK';	
+	   $pdo = new PDO($dbConnection, $username, $password);
+	   
+	   其中,
+	   $mysqlHost:为MySQL主机地址
+	   $mysqlPort:为MySQL服务端口
+	   $dbName:数据库名称
+	   $username:数据库访问用户名
+	   $password:数据库访问密码
+
+	   特别提醒，本地调试TAE应用的数据库PDO的构造器参数（$dbConnection,$username,$password），无需担心对线上数据库访问的影响。	
+	   同时，在本地开发时，请让数据库和数据表的默认字符集编码设置为：GBK。
+	   
+	
+2012/10/29
+1.[SDK工具-问题修复]
+	a) 修复TAE Smart中文乱码问题
+	
+2.[SDK实例-DEMO更新]
+    a) 根据TAE APP实现，更新最新的 TAE APP demo
+	
+	
 2012/10/27
 1.[SDK工具-功能更新]
 	a) SDK TAE应用开发功能调整，保持线上和线下一致。
