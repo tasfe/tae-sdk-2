@@ -18,7 +18,12 @@ start_jar_found(){
 
 java_found(){
 	JETTY_HOME=$DCSDK_HOME/lib/jetty
-	JAVA_OPTS="$JAVA_OPTS-javaagent:$DCSDK_HOME/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar"
+	JAVA_OPTS="$JAVA_OPTS -client"
+	JAVA_OPTS="$JAVA_OPTS -XX:+AggressiveOpts"
+	JAVA_OPTS="$JAVA_OPTS -XX:+UseParallelGC"
+
+	JAVA_OPTS="$JAVA_OPTS -javaagent:$DCSDK_HOME/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar"
+
 	JAVA_OPTS="$JAVA_OPTS -DDCSDK_HOME=$DCSDK_HOME"	
 	JAVA_OPTS="$JAVA_OPTS -Dmain.class=com.taobao.tae.sdk.platform.Main"
 	JAVA_OPTS="$JAVA_OPTS -DSTART=$DCSDK_HOME/conf/start.config"
@@ -67,22 +72,5 @@ start(){
 	fi
 }
 
-upgrade(){
-	if [ -a "$DCSDK_HOME/upgrade_temp/upgrade.rdy" ];then
-		rm -rf $DCSDK_HOME/conf
-		rm -rf $DCSDK_HOME/db
-		rm -rf $DCSDK_HOME/lib
-		rm -rf $DCSDK_HOME/logs
-
-		mv --force $DCSDK_HOME/upgrade_temp/upgrade_unziped/DC_SDK/conf  $DCSDK_HOME/conf
-		mv --force $DCSDK_HOME/upgrade_temp/upgrade_unziped/DC_SDK/db  $DCSDK_HOME/db
-		mv --force $DCSDK_HOME/upgrade_temp/upgrade_unziped/DC_SDK/lib  $DCSDK_HOME/lib
-		mv --force $DCSDK_HOME/upgrade_temp/upgrade_unziped/DC_SDK/logs  $DCSDK_HOME/logs
-
-		rm -rf $DCSDK_HOME/upgrade_temp
-	fi
-}
-
-upgrade
 start
 

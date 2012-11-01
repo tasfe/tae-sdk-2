@@ -6,9 +6,6 @@ set DCSDK_HOME=%~dp0..
 
 for %%x in ("%DCSDK_HOME%") do set DCSDK_HOME=%%~sx
 
-if not exist "%DCSDK_HOME%\upgrade_temp\upgrade.rdy" goto start
-call "Upgrade.bat"
-
 :start
 set TEMP_JAVA_HOME=%DCSDK_HOME%\jre
 
@@ -24,13 +21,13 @@ set JETTY_HOME=%DCSDK_HOME%\lib\jetty
 set JAVA_OPTS=%JAVA_OPTS% -client
 
 set JAVA_OPTS=%JAVA_OPTS% -XX:+AggressiveOpts
+set JAVA_OPTS=%JAVA_OPTS% -XX:+UseParallelGC
+
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseStringCache
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseCompressedStrings
 
-set JAVA_OPTS=%JAVA_OPTS% -XX:+UseParallelGC
-set JAVA_OPTS=%JAVA_OPTS% -XX:ParallelGCThreads=2
-
 set JAVA_OPTS=%JAVA_OPTS% -javaagent:%DCSDK_HOME%/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar
+
 set JAVA_OPTS=%JAVA_OPTS% -DDCSDK_HOME=%DCSDK_HOME%
 set JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=GBK
 set JAVA_OPTS=%JAVA_OPTS% -Dmain.class=com.taobao.tae.sdk.platform.Main
@@ -54,7 +51,11 @@ set JAVA_OPTS=%JAVA_OPTS% -Ddisplay.template.number.per.page=10
 set JAVA_OPTS=%JAVA_OPTS% -Doffline.mode
 
 set JAVA_OPTS=%JAVA_OPTS% -Dprmain.async.action.enabled
-set JAVA_OPTS=%JAVA_OPTS% -Dprmain.async.action.thread.pool.size=5
+set JAVA_OPTS=%JAVA_OPTS% -Dprmain.async.action.thread.pool.size=2
+
+set JAVA_OPTS=%JAVA_OPTS% -Dnode.js.enabled
+set JAVA_OPTS=%JAVA_OPTS% -Dnative.node.js.less.compiler.enabled
+set JAVA_OPTS=%JAVA_OPTS% -Dnative.node.js.express.static.file.web.server.enabled
 
 
 
