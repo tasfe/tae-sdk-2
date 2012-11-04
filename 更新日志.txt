@@ -1,4 +1,17 @@
 [更新日志]
+2012/11/4
+1.[SDK工具-功能更新]			  
+	a) SDK添加图形化界面对JS模板开发的支持
+	b) 当SDK服务器关闭后，Node JS 静态文件Web服务器将自动关闭
+	c) 统一SDK服务器配置参数
+	   特别提醒：为了解决Windows和非Windows启动脚本中的参数不一致的问题，SDK服务器配置参数将统一处理。
+	   SDK服务器配置参数分为两个版本：标准版和开发版。标准版是功能稳定的版本，开放版则是添加SDK实验性功能。
+	   两者配置文件存放在conf目录下，文件名分别为：sdk.std.properties和sdk.dev.properties。配置选项中有注释，
+	   开发者可以根据开发机器的特点调整sdk.dev.properties(开发版配置），请尽可能地不要删除sdk.std.properties文件中配置。
+	   不过如果开发人员需要同步系统模块的信息的话，需要在sdk.std.properties中修改，StartServer.bat或类似的启动脚本已经不再起效果。	  
+	   
+
+	
 2012/11/1
 1.[SDK工具-功能更新]			  
     a)  新增原生Node JS 方式Less CSS 编译器实现
