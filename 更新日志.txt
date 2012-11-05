@@ -1,4 +1,13 @@
 [更新日志]
+2012/11/5
+1.[SDK工具-功能更新]			  
+	a) 优化静态文件服务器 URL：将localhost替换成IP，减少DNS查询，并且移除只有本机可以访问图片的限制
+	b) TAE APP 移除角色：siteowner 。目前保留的角色:developer,sitecustomer,anonymous	
+	
+2.[SDK工具-问题修复]
+	a) 修复系统模块JS错误
+	
+	
 2012/11/4
 1.[SDK工具-功能更新]			  
 	a) SDK添加图形化界面对JS模板开发的支持
