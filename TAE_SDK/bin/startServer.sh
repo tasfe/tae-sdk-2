@@ -25,6 +25,12 @@ java_found(){
 	JAVA_OPTS="$JAVA_OPTS -javaagent:$DCSDK_HOME/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar"
 
 	JAVA_OPTS="$JAVA_OPTS -DDCSDK_HOME=$DCSDK_HOME"
+    JAVA_OPTS="$JAVA_OPTS -Dmain.class=com.taobao.tae.sdk.platform.Main"
+    JAVA_OPTS="$JAVA_OPTS -DSTART=$DCSDK_HOME/conf/start.config"
+    JAVA_OPTS="$JAVA_OPTS -Djava.io.tmpdir=$DCSDK_HOME/temp"
+    JAVA_OPTS="$JAVA_OPTS -Duser.home=$DCSDK_HOME/temp"
+    JAVA_OPTS="$JAVA_OPTS -Duser.dir=$DCSDK_HOME/temp"
+    JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=GBK"
 
 	START_JAR=""
 	for _START_JAR in $JETTY_HOME/start*.jar

@@ -25,7 +25,13 @@ set JAVA_OPTS=%JAVA_OPTS% -XX:+UseParallelGC
 
 set JAVA_OPTS=%JAVA_OPTS% -javaagent:%DCSDK_HOME%/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar
 
+set JAVA_OPTS=%JAVA_OPTS% -DDCSDK_HOME=%DCSDK_HOME%
 set JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=GBK
+set JAVA_OPTS=%JAVA_OPTS% -Dmain.class=com.taobao.tae.sdk.platform.Main
+set JAVA_OPTS=%JAVA_OPTS% -DSTART=%DCSDK_HOME%\conf\start.config
+set JAVA_OPTS=%JAVA_OPTS% -Djava.io.tmpdir=%DCSDK_HOME%\temp
+set JAVA_OPTS=%JAVA_OPTS% -Duser.home=%DCSDK_HOME%\temp
+set JAVA_OPTS=%JAVA_OPTS% -Duser.dir=%DCSDK_HOME%\temp
 
 
  
