@@ -82,6 +82,69 @@ class ItemDO
 }
 
 /**
+ * sku类
+ */
+class ItemSkuDO
+{
+    /**
+     * sku的id键值
+     */
+    public $skuId = 1111;
+
+    /**
+     *   商品ID
+     */
+    public $itemId = 1;
+
+    /**
+     *   商品数量
+     */
+    public $quantity = 20;
+
+    /**
+     *   商品价格
+     */
+    public $price = 120.00;
+
+    /**
+     * sku属性列表
+     */
+    public $openItemSkuPropertiesDOList = Array(Array('2222','3335','1111','颜色分类','红色'),
+                                                Array('2223','3354','1111','尺码','XL'));
+    /**
+     * 属性：颜色分类的图片URL
+     */
+    public $propertyImageUrl = "http://www.taobao.com/yyy.gif";
+}
+
+/**
+ * itemSKuPropertyDO类
+ */
+
+class ItemSkuPropertiesDO
+{
+    /**
+     * 属性ID
+     */
+    public $propertyId = 2222;
+    /**
+     * 属性值ID
+     */
+    public $valueId = 3335;
+    /**
+     * skuID,用来反向关联
+     */
+    public $skuId = 1111;
+    /**
+     * 属性文本名称
+     */
+    public $propertyText = "颜色分类";
+    /**
+     * 属性文本值
+     */
+    public $valueText ="红色";
+}
+/**
  * 店铺类
  */
 class ShopDO
@@ -253,6 +316,64 @@ class ShopCategoryDO
 }
 
 /**
+ * 评价类
+ */
+class RateDO
+{
+    /**
+     * 宝贝数字id
+     */
+	public $auctionId = 123456;
+
+    /**
+     * 评价者昵称
+     */
+	public $raterNick = "评价者昵称";
+	
+    /**
+     * 评价内容，存文字，不包括图片
+     */
+	public $feedback = "评价内容";
+
+    /**
+     * 评价时间，格式如 2012.11.21 16:23:23 
+     */
+	private $feedbackdate = "评价时间"
+}
+
+/**
+ * 各种评价个数类
+ */
+class RateCountDO
+{
+	/**
+	 * 宝贝数字id
+	 */
+	public $auctionId = 123456;
+
+	/**
+	 * 好评数
+	 */
+	public $goodCount = 123;
+
+	/**
+	 * 中评数
+	 */
+	public $normalCount = 123;
+
+	/**
+	 * 差评数
+	 */
+	public $badCount = 123;
+
+	/**
+	 * 总评论数
+	 */
+	public $total = 346;
+}
+
+
+/**
  * 商品管理类
  */
 class ItemManager
@@ -301,6 +422,17 @@ class ItemManager
     {
         return array(new ItemDO());
     }
+
+    /**
+     *  根据ItemDO对象列表批量查询sku对象列表，有些宝贝没有sku信息，
+     *  此时查询的结果返回为空列表
+     *  @param $itemDOList (宝贝列表，进行批量查询,最多20条，超过20条返回空)
+     *  @return array(array)(ItemSkuDO对象列表的列表)
+     */
+     public function queryOpenSkuDOListByOpenItemDOList($itemDOList)
+     {
+        return Array(Array(new ItemSkuDO));
+     }
 }
 
 /**
@@ -452,6 +584,63 @@ class URIManager
     }
 }
 
+/**
+ * 评价管理器
+ */
+Class RateManager
+{
+    /**
+     * 业务规则：
+     * 1、返回最多20个宝贝的单条评价信息;如果超过20个，直接忽略请求；
+     * 2、评价筛选条件：获取每个商品最近的10条评价，
+     *      取出字数大于20个字小于80个字的评价，随机选择一条返回；
+     *      如果没有符合条件的评价，取字数最多的一条；
+     * 3、1次页面渲染最多3次调用；否则忽略接口请求；
+     * @param auctionNumIds    宝贝数字id列表
+     * @return  非空评价列表
+     */
+	public function queryRates($auctionNumIds){
+		return array(new RateDO());
+	}
+
+    /**
+     * 业务规则：
+     * 1、返回单个宝贝15条有内容的评价信息
+     * 2、1次页面渲染最多30次调用；否则忽略接口请求；
+     * 3、拉取评分较高的评价信息;
+     * 4、不保证评论字数在某一个字数范围内
+     * @param auctionNumId    宝贝数字id
+     * @return    非空评价列表，按时间倒序排序
+     */
+	public function queryAuctionRates($auctionNumId){
+		return array(new RateDO());
+	}
+
+    /** 业务规则：
+     * 1、返回auctionNumId指定的宝贝，所拥有的主站好评数、中评数、差评数以及总评数
+     * 2、1次页面渲染最多30次调用；否则忽略接口请求；
+     * @param auctionNumId 宝贝数字id
+     * @return RateCountDO
+     */
+	public function queryRateCount($auctionNumId){
+		return new RateCountDO();
+	}
+
+    /** 业务规则：
+     * 1、返回20条店铺收到的买家评价信息
+     * 2、有评论内容，评分高的评价信息
+     * 3、1次页面渲染最多1次调用；否则忽略接口请求；
+     * 4、不保证评论字数在某一个字数范围内；
+     * @return 非空评价列表，按评价时间倒序排序
+     */
+	public queryShopRates(){
+		return array(new RateDO());
+	}
+
+}
+
+
+
 //---------------- 全局对象 ------------------------
 
 /**
@@ -489,5 +678,11 @@ $_user = new UserDO();
  * 店铺对象
  */
 $_shop = new ShopDO();
+
+
+/**
+ * 评价对象
+ */
+$rateManager = new RateManager();
 
 ?>
