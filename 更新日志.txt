@@ -1,4 +1,14 @@
 [更新日志]
+2012/11/22
+1.[SDK工具-功能更新]
+	a) SDK新增“评论接口"的支持 
+		相关wiki资源：http://newwiki.zx.taobao.com/index.php?title=%E8%AF%84%E4%BB%B7
+	b) SDK新增“宝贝SKU信息"接口的支持 
+		相关wiki资源：http://newwiki.zx.taobao.com/index.php?title=SKU	
+	
+2.[SDK学习资源]
+	新wiki地址（持续更新）：http://newwiki.zx.taobao.com
+
 2012/11/21
 1.[SDK工具-功能更新]
 	a) 添加模板类型：支持TAE开发
