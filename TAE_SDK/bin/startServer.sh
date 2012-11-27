@@ -21,6 +21,9 @@ java_found(){
 	JAVA_OPTS="$JAVA_OPTS -client"
 	JAVA_OPTS="$JAVA_OPTS -XX:+AggressiveOpts"
 	JAVA_OPTS="$JAVA_OPTS -XX:+UseParallelGC"
+	JAVA_OPTS="$JAVA_OPTS -XX:+UseParallelGC"
+	JAVA_OPTS="$JAVA_OPTS -XX:MaxPermSize=256m"
+
 
 	JAVA_OPTS="$JAVA_OPTS -javaagent:$DCSDK_HOME/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar"
 

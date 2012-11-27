@@ -22,6 +22,7 @@ set JAVA_OPTS=%JAVA_OPTS% -client
 
 set JAVA_OPTS=%JAVA_OPTS% -XX:+AggressiveOpts
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseParallelGC
+set JAVA_OPTS=%JAVA_OPTS% -XX:MaxPermSize=256m
 
 set JAVA_OPTS=%JAVA_OPTS% -javaagent:%DCSDK_HOME%/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar
 
