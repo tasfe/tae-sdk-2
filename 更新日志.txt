@@ -3,6 +3,7 @@
 1.[SDK工具-问题修复]
 	a) 修复TAE APP Smarty 数组错误
 	b) 修改Google 二维码图片显示错误
+	c) 解决Quercus PDO实现的lastInsertId永远返回0的问题
 	
 2012/11/25
 1.[SDK工具-功能更新]
