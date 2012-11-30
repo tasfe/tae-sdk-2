@@ -1,4 +1,18 @@
 [更新日志]
+2012/11/30
+1.[SDK工具-功能更新]
+	a)【SDK TAE应用】添加 $context->getBrowser()->getNick() 的加密（ http://bangpai.taobao.com/group/thread/15146155-278540323.htm）
+	b)【SDK TAE应用】添加TAE APP Service方法调用前注入context，如果是TAE模板的话，调用$context->siteOwner返回店铺的用户信息
+	b)【SDK TAE应用】添加iframe白名单，支持u站的多级域名
+	c)【SDK TAE模板】模块PHP上下文中添加$_taeServer 上下文变量	
+	d)【SDK TAE模板】添加*.taobaoapps.net 域名白名单
+	e)【SDK CSS相关】支持CSS注释保留功能和内容格式化
+	f)【SDK 基础模板】该版本为预览版，由于线上配置还未完成，待配置完成后可以完全开发：添加布局控制（布局管理功能，在添加布局时限制，只能添加两栏布局（190-750/750-190））、一套皮肤、以及装修规则配置以及校验逻辑
+	g)【SDK 功能】更新创建模板时，模板区别连接（ http://newwiki.zx.taobao.com/index.php?title=%E6%A8%A1%E6%9D%BF%E7%AE%80%E4%BB%8B）
+	h)【SDK 开放接口】宝贝SKU接口修改，具体参考：http://newwiki.zx.taobao.com/index.php?title=%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3#sku.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E.EF.BC.88.E5.8D.B3.E5.B0.86.E4.B8.8A.E7.BA.BF.EF.BC.8C.E8.AF.B7.E4.B8.8D.E8.A6.81.E5.9C.A8.E7.BA.BF.E4.B8.8A.E4.BD.BF.E7.94.A8.EF.BC.89
+	
+
+
 2012/11/27
 1.[SDK工具-问题修复]
 	a) 修复TAE APP Smarty 数组错误
