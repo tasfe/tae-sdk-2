@@ -17,12 +17,8 @@
     <Set name="ThreadPool">
 
         <New class="org.mortbay.thread.concurrent.ThreadPool">
-            <Set name="corePoolSize">
-                <SystemProperty name="NUMBER_OF_THREADS" default="3"/>
-            </Set>
-            <Set name="maximumPoolSize">
-                <SystemProperty name="NUMBER_OF_THREADS" default="3"/>
-            </Set>
+            <Set name="corePoolSize">2</Set>
+            <Set name="maximumPoolSize">2</Set>
         </New>
 
         <!-- Optional Java 5 bounded threadpool with job queue
@@ -55,9 +51,7 @@
                     <SystemProperty name="sdk.web.port" default="8080"/>
                 </Set>
                 <Set name="maxIdleTime">300000</Set>
-                <Set name="Acceptors">
-                    <SystemProperty name="NUMBER_OF_ACCEPTORS" default="2"/>
-                </Set>
+                <Set name="Acceptors">1</Set>
                 <Set name="statsOn">false</Set>
                 <Set name="confidentialPort">8443</Set>
                 <Set name="lowResourcesConnections">5000</Set>
