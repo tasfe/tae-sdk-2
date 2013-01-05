@@ -1,4 +1,10 @@
 [更新日志]
+2013/01/05
+1.[SDK工具-功能更新]
+	a) 新增评论选择器组件
+	   开发文档：http://newwiki.zx.taobao.com/index.php?title=%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3#.E5.AE.9D.E8.B4.9D.E8.AF.84.E4.BB.B7.E9.80.89.E6.8B.A9.E5.99.A8.E8.AF.B4.E6.98.8E
+	   Demo下载：http://www.kuaipan.cn/file/id_63428115682051765.htm
+
 2012/12/27
 1.[SDK工具-功能更新]
 	a) 重大更新：Kissy 1.1.6 -> Kissy 1.3.0 。如果存在兼容性问题，请在SDK工具的缺陷反馈中反馈
