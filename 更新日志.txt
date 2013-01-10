@@ -1,4 +1,8 @@
 [更新日志]
+2013/01/10
+1.[SDK工具-功能更新]
+	a) TAE APP JS功能升级
+	
 2013/01/09
 1.[SDK工具-功能更新]
 	a) 添加模块单独调试方法，SDK 开放JS功能升级，详细参考：http://newwiki.zx.taobao.com/index.php?title=JS_API
