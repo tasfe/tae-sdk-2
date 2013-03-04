@@ -4,6 +4,7 @@
 	a) 解决TAE SDK在中文路径下启动失败的错误(问题描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=2）
 	b) 解决"同步店铺宝贝"数据无法展示问题(问题描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=3）
 	c) 解决本地SDK宝贝链接与线上实现不一致的问题(问题描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=8）
+	d) 解决TAE 应用的Kissy版本问题
 	
 2.[SDK工具-功能更新]
 	a) 在Windows操作系统下，添加SDK启动器，文件存放在bin目录下，名为"TAE-SDK-Launcher.exe"
