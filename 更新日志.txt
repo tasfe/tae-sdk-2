@@ -1,4 +1,30 @@
 [更新日志]
+2013/03/04
+1.[SDK工具-问题修复]
+	a) 解决TAE SDK在中文路径下启动失败的错误(问题描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=2）
+	b) 解决"同步店铺宝贝"数据无法展示问题(问题描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=3）
+	c) 解决本地SDK宝贝链接与线上实现不一致的问题(问题描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=8）
+	
+2.[SDK工具-功能更新]
+	a) 在Windows操作系统下，添加SDK启动器，文件存放在bin目录下，名为"TAE-SDK-Launcher.exe"
+	b) SDK启动器支持Windows开机启动功能
+	c) TAE SDK支持全屏布局
+	   使用说明：
+	   *) 为了良好的用户体验，只能使用一个设计师模块作为全屏模块
+	   *) 只有首页（#bd中的内容区)提供全屏布局，其他页面均不能（建议在设计模块时，考虑其他页面兼容的情况）
+	   *) 由于设计师无法控制系统模块的dom结构，不建议设计师为系统模块做全屏功能
+	   
+	   特别说明：如果设计师违反以上规则规的话，一切后果由设计师自身承担！
+	   
+	d) 自定义XML行宽度功能（细节描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=5）
+	   自定义功能配置：
+	   通过修改conf目录下的sdk.std.properties文件来自定义行宽度数值大小。
+	   通过配置参数：
+	   ...
+	   #XML 行宽度配置
+	   xml.line.width=800
+	e) 智能内存管理（优化SDK启动时间以及内存优化）	
+
 2013/01/15
 1.[SDK工具-问题修复]
 	a) 线上对post参数[]的情况作了特殊处理，以满足php的用法
