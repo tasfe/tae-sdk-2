@@ -21,7 +21,10 @@ java_found(){
 	JAVA_OPTS="$JAVA_OPTS -client"
 	JAVA_OPTS="$JAVA_OPTS -XX:+AggressiveOpts"
 	JAVA_OPTS="$JAVA_OPTS -XX:+UseParallelGC"
-	JAVA_OPTS="$JAVA_OPTS -XX:+UseParallelGC"
+	JAVA_OPTS="$JAVA_OPTS -XX:+UseStringCache"
+	JAVA_OPTS="$JAVA_OPTS -XX:+UseBiasedLocking"
+	JAVA_OPTS="$JAVA_OPTS -XX:+UseFastAccessorMethods"
+
 	JAVA_OPTS="$JAVA_OPTS -XX:MaxPermSize=256m"
 
 

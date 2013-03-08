@@ -22,9 +22,9 @@ set JAVA_OPTS=%JAVA_OPTS% -client
 
 set JAVA_OPTS=%JAVA_OPTS% -XX:+AggressiveOpts
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseParallelGC
-
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseStringCache
-set JAVA_OPTS=%JAVA_OPTS% -XX:+UseCompressedStrings
+set JAVA_OPTS=%JAVA_OPTS% -XX:+UseBiasedLocking
+set JAVA_OPTS=%JAVA_OPTS% -XX:+UseFastAccessorMethods
 
 set JAVA_OPTS=%JAVA_OPTS% -javaagent:%DCSDK_HOME%/lib/taobao/sdk-agent-2.0.0-SNAPSHOT.jar
 
