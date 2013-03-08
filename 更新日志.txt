@@ -1,4 +1,13 @@
 [更新日志]
+2013/03/08
+1.[SDK工具-重要提示]
+	a) SDK部分功能依赖在JRE 7（或JDK 7）以上的版本，并且SVN中不再提供JRE的环境，请用户自行下载：
+	下载地址：
+	http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+	
+2.[SDK工具-问题修复]
+	a) 修复异步编译的问题，从而解决Less CSS不编译的问题	
+
 2013/03/04
 1.[SDK工具-问题修复]
 	a) 解决TAE SDK在中文路径下启动失败的错误(问题描述：https://code.google.com/p/tae-sdk-2/issues/detail?id=2）
