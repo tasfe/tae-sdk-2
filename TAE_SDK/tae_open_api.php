@@ -216,5 +216,7 @@ class Context{
 $_cdnServer="http://www.tbcdn.com";
 $_taeServer ="http://www.tbcdn.com";
 $appLog;   //日志服务，跟log4j的接口类似， 比如使用$appLog->info("infolog") ; $appLog->warn("warnlog")
+//设置页面标题
+$_page->setTitle("页面标题名称");
 $context = new Context();   //请求的上下文，
 ?>
