@@ -1,9 +1,14 @@
 [更新日志]
 2013/08/20
 1.[SDK工具-软件更新]  
-	a) 修改TAE应用对TOP JS SDK以及alimap行为支持
-	   如果您的应用使用了TOP JS SDK的话，请自行添加：<script src="http://l.tbcdn.cn/apps/top/x/sdk.js?appkey=$appKey" ></script>
-	   如果您的应用使用了alimap的话，请自行添加：<script src="http://api.ditu.aliyun.com/map.js" ></script>
+	a) 修改TAE应用（仅针对ISV模块迁移）对TOP JS SDK以及alimap行为支持
+	   对于使用TOP JS SDK的用户
+			1.请自行添加：<script src="http://l.tbcdn.cn/apps/top/x/sdk.js?appkey=$appKey" ></script>
+			2.如果需要生成TOP JS SDK的Cookie信息，请添加一下代码：
+			$jssdkService->init($appKey,$secret);
+			
+		对于使用alimap的用户
+			1.请自行添加：<script src="http://api.ditu.aliyun.com/map.js" ></script>
 
 2013/08/15
 1.[SDK工具-软件更新]  
