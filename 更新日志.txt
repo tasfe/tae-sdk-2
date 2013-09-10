@@ -1,4 +1,18 @@
 [更新日志]
+2013/09/10
+1.[SDK工具-软件更新] 
+    a) TAE PHP 应用支持多JS文件加载	
+    使用说明：
+    当PHP页面中引入以下三个脚本文件时，
+	<script src="/c1.js" ></script>
+	<script src="/c2.js" ></script>
+	<script src="/c3.js" ></script>
+	
+	最终页面会将以上三个JS脚本文件合并一个Caja编译后的文件输出：
+	<script src="/cajaed.combined-js-file-1553473238.js"></script>
+	
+	b) TAE PHP 应用支持多CSS文件加载
+	
 2013/09/04
 1.[SDK工具-软件更新] 
 	a) 支持Caja模块化
