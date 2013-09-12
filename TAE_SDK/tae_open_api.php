@@ -101,6 +101,16 @@ class CacheService
     {
         return "";
     }
+	
+	/**
+     * 从cache中获取多个key对应的值集合
+     * @param $keys 多个Key值
+     * @return string  缓存值
+     */
+    function mget($keys)
+    {
+        return array();
+    }
 
     /**
      * 从缓存中删除eky
