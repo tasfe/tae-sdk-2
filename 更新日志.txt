@@ -1,4 +1,11 @@
 [更新日志]
+2013/09/17
+1.[SDK工具-软件更新] 
+  a) 支持跨app通信；通过service方式；
+  b) TAE店铺模块类型应用提供前后端打包功能；
+  c) TAE店铺模块类型应用前端模块默认创建JS模块，JS文件module.js默认内容：console.log('JS exec')；
+  d) TAE店铺模块类型应用前端模块默认创建带有color:black的样式文件；
+
 2013/09/12
 1.[SDK工具-软件更新] 
     a) TAE PHP 应用开发服务CacheService添加mget方法
